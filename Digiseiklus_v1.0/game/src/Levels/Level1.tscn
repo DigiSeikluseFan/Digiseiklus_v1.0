@@ -96,7 +96,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Must_pind" parent="Pind" instance=ExtResource( 6 )]
+[node name="Must_pind1" parent="Pind" instance=ExtResource( 6 )]
 position = Vector2( -24166.7, 1396.83 )
 scale = Vector2( 3.39583, 5.5873 )
 
@@ -143,7 +143,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ram" parent="Ram" instance=ExtResource( 1 )]
+[node name="ram1" parent="Ram" instance=ExtResource( 1 )]
 
 [node name="ram2" parent="Ram" instance=ExtResource( 1 )]
 position = Vector2( 1041.03, -363.171 )
@@ -206,7 +206,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CD" parent="Animated_CD" instance=ExtResource( 16 )]
+[node name="CD1" parent="Animated_CD" instance=ExtResource( 16 )]
 position = Vector2( 17450.6, 1444.61 )
 scale = Vector2( 2.38809, 2.37571 )
 
@@ -226,105 +226,123 @@ scale = Vector2( 2.38809, 2.37571 )
 position = Vector2( 1645.3, 204.62 )
 scale = Vector2( 0.418745, 0.420926 )
 
-[node name="ventikas11" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_1" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 196.539, 1203.63 )
 
-[node name="ventikas12" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_2" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 3496.36, 683.608 )
 
-[node name="ventikas13" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_3" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 4025.35, 1207.77 )
 
-[node name="ventikas14" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_4" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 9304.88, 1202.88 )
 
-[node name="ventikas15" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_5" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 22490.6, 1205.79 )
 
-[node name="ventikas16" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_6" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 29334, 1207.93 )
 
-[node name="ventikas17" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+[node name="Anim_Vent_Suur_7" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 29863.9, 1207.78 )
 
-[node name="Ventikas" type="Node2D" parent="."]
+[node name="Suur_Vent" type="Node2D" parent="."]
 position = Vector2( 1728, 713 )
 scale = Vector2( 0.418745, 0.420926 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="ventikas" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_1" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 27.6743, 1222.32 )
 
-[node name="ventikas2" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_2" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 3297.95, 0 )
 
-[node name="ventikas3" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_3" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 3249.81, 1220.18 )
 
-[node name="ventikas4" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_4" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 3923.74, 1258.65 )
 
-[node name="ventikas5" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_5" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 9148.15, 1298.78 )
 
-[node name="ventikas6" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_6" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 16394.2, 2.37573 )
 
-[node name="ventikas7" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_7" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 22232.3, 1284.31 )
 
-[node name="ventikas8" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_8" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 27694.7, 2.37573 )
 
-[node name="ventikas9" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_9" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 29086.8, 1298.46 )
 
-[node name="ventikas10" parent="Ventikas" instance=ExtResource( 7 )]
+[node name="Vent_10" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 30067.4, 1253.82 )
 
-[node name="vaikevent" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 8723.69, 125.913 )
+[node name="Vaike_Vent" type="Node2D" parent="."]
+position = Vector2( 683, 651 )
+scale = Vector2( 0.045, 0.045 )
 
-[node name="vaikevent13" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( -384.482, 128.289 )
+[node name="Vaike_Vent_1" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 19644.5, 2577.78 )
+scale = Vector2( 9.30545, 9.35391 )
 
-[node name="vaikevent14" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 405.975, 125.913 )
+[node name="Vaike_Vent_2" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 27000, 2555.56 )
+scale = Vector2( 9.30545, 9.35391 )
 
-[node name="vaikevent2" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 13557.2, 125.913 )
+[node name="Vaike_Vent_3" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 104400, 2555.56 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent3" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 16005, 128.289 )
+[node name="Vaike_Vent_4" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 149237, 2555.56 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent4" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 19472.5, 128.289 )
+[node name="Vaike_Vent_5" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 172156, 2577.78 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent5" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 21910.7, 130.664 )
+[node name="Vaike_Vent_6" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 204423, 2577.78 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent6" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 23680.3, 128.289 )
+[node name="Vaike_Vent_7" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 227111, 2600 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent7" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 27319.7, 130.664 )
+[node name="Vaike_Vent_8" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 243578, 2577.78 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent8" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 28755.5, 131.381 )
+[node name="Vaike_Vent_9" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 277444, 2600 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent9" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 30073.7, 133.215 )
+[node name="Vaike_Vent_10" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 290805, 2606.71 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent10" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 29280.4, -394.369 )
+[node name="Vaike_Vent_11" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 303071, 2623.86 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent11" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 29545.4, -394.369 )
+[node name="Vaike_Vent_12" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 295689, -2311.12 )
+scale = Vector2( 9.30544, 9.35391 )
 
-[node name="vaikevent12" parent="Ventikas" instance=ExtResource( 17 )]
-position = Vector2( 29406.9, -658.073 )
+[node name="Vaike_Vent_13" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 298155, -2311.12 )
+scale = Vector2( 9.30544, 9.35391 )
+
+[node name="Vaike_Vent_14" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 296867, -4777.78 )
+scale = Vector2( 9.30544, 9.35391 )
 
 [node name="Vastased_Punane" type="Node2D" parent="."]
 position = Vector2( 683, 651 )
@@ -333,7 +351,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Vastane_Punane" parent="Vastased_Punane" instance=ExtResource( 18 )]
+[node name="Vastane_Punane1" parent="Vastased_Punane" instance=ExtResource( 18 )]
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane2" parent="Vastased_Punane" instance=ExtResource( 18 )]
@@ -384,7 +402,7 @@ scale = Vector2( 1, 1 )
 position = Vector2( 14967, 486 )
 scale = Vector2( 0.045, 0.045 )
 
-[node name="Vastane_Roheline" parent="Vastased_Roheline" instance=ExtResource( 19 )]
+[node name="Vastane_Roheline1" parent="Vastased_Roheline" instance=ExtResource( 19 )]
 position = Vector2( -250.406, 103.853 )
 scale = Vector2( 1, 1 )
 
