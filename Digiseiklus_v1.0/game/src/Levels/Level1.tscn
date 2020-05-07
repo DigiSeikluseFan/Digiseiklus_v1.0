@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://objektid/Checkpoint_green1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://objektid/Checkpoint_green2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://objektid/Checkpoint_green3.tscn" type="PackedScene" id=14]
-[ext_resource path="res://assets/Background/taust_elementidega_10.png" type="Texture" id=15]
 [ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=16]
 [ext_resource path="res://objektid/Vaike_vent.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Vastane_Punane.tscn" type="PackedScene" id=18]
@@ -34,21 +33,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="taust_elementidega_10" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 12599, 1728 )
-texture = ExtResource( 15 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Taust_Clean_4" type="Sprite" parent="Taust"]
-position = Vector2( 6719, 541 )
-texture = ExtResource( 8 )
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="Taust_Clean_1" type="Sprite" parent="Taust"]
 position = Vector2( 959, 541 )
 texture = ExtResource( 4 )
@@ -56,9 +40,23 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Taust_Clean_2" type="Sprite" parent="Taust"]
+position = Vector2( 2879, 541 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Taust_Clean_3" type="Sprite" parent="Taust"]
 position = Vector2( 4799, 541 )
 texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Taust_Clean_4" type="Sprite" parent="Taust"]
+position = Vector2( 6719, 541 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -73,13 +71,6 @@ __meta__ = {
 [node name="Taust_Clean_7" type="Sprite" parent="Taust"]
 position = Vector2( 12479, 541 )
 texture = ExtResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Taust_Clean_2" type="Sprite" parent="Taust"]
-position = Vector2( 2879, 541 )
-texture = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -227,6 +218,10 @@ scale = Vector2( 2.38809, 2.37571 )
 position = Vector2( 26698.8, 1518.87 )
 scale = Vector2( 2.38809, 2.37571 )
 
+[node name="CD4" parent="Animated_CD" instance=ExtResource( 16 )]
+position = Vector2( 1699.35, 1427.27 )
+scale = Vector2( 2.38809, 2.37571 )
+
 [node name="Animated_Vent_Suur" type="Node2D" parent="."]
 position = Vector2( 1645.3, 204.62 )
 scale = Vector2( 0.418745, 0.420926 )
@@ -287,7 +282,7 @@ position = Vector2( 27694.7, 2.37573 )
 position = Vector2( 29086.8, 1298.46 )
 
 [node name="ventikas10" parent="Ventikas" instance=ExtResource( 7 )]
-position = Vector2( 30032.3, 1195.57 )
+position = Vector2( 30067.4, 1253.82 )
 
 [node name="vaikevent" parent="Ventikas" instance=ExtResource( 17 )]
 position = Vector2( 8723.69, 125.913 )
@@ -411,6 +406,10 @@ scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline6" parent="Vastased_Roheline" instance=ExtResource( 19 )]
 position = Vector2( -56961.9, -2091.15 )
+scale = Vector2( 1, 1 )
+
+[node name="Vastane_Roheline_CP juures" parent="Vastased_Roheline" instance=ExtResource( 19 )]
+position = Vector2( -65379.4, 1123.42 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline7" parent="Vastased_Roheline" instance=ExtResource( 19 )]
