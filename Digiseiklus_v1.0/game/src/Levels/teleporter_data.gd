@@ -3,6 +3,10 @@ extends Node2D
 #spawns player location to scene
 var player_location = Vector2(236.82,789.579)
 var player_spawn = load("res://src/Actors/Player.tscn")
+var isCheckpointPassed = false
+
+
+
 
 func _ready():
 	set_process(true)
@@ -11,3 +15,4 @@ func _ready():
 
 	TeleporterData.set("player_location", player_location)
 	TeleporterData.set("player_spawn", player_spawn)
+	TeleporterData.set("isCHeckpointPassed", isCheckpointPassed)

@@ -10,7 +10,7 @@ extents = Vector2( 32.8917, 75.1918 )
 position = Vector2( -2.26286, 0.850554 )
 collision_layer = 2
 script = ExtResource( 2 )
-level_scene = "res://objektid/Question 2.tscn"
+level_scene = "res://objektid/Question_Box.tscn"
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.947319, 0.917633 )

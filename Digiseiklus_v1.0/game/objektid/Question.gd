@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 export (String, FILE, "*.tscn") var level_scene
 export (String) var question
 export (String) var answer1
@@ -52,15 +52,15 @@ func _ready():
 
 	var randomList1 = questionList1[randi() % questionList1.size()+1]
 
-	question = randomList1.get("label")	
+	question = randomList1.get("label")
 	answer1 = randomList1.get("answer1")
 	answer2 = randomList1.get("answer2")
 	answer3 = randomList1.get("answer_right")
 
 	get_node("Question").set_text(question)
-	get_node("Vastusevariant1").set_text(answer1)
-	get_node("Vastusevariant2").set_text(answer2)
-	get_node("Vastusevariant3").set_text(answer3)
+	get_node("Vastuste_container/Vastusvariant_container/Vastusevariant1").set_text(answer1)
+	get_node("Vastuste_container/Vastusvariant_container/Vastusevariant2").set_text(answer2)
+	get_node("Vastuste_container/Vastusvariant_container/Vastusevariant3").set_text(answer3)
 
 
 		

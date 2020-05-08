@@ -6,7 +6,7 @@
 [ext_resource path="res://assets/Background/küsimuste_popup_puhas.png" type="Texture" id=4]
 [ext_resource path="res://assets/taustamuusika2.wav" type="AudioStream" id=5]
 
-[sub_resource type="ButtonGroup" id=2]
+[sub_resource type="ButtonGroup" id=1]
 
 [node name="Question" type="Control"]
 modulate = Color( 0.0470588, 0.768627, 0.933333, 1 )
@@ -40,7 +40,8 @@ margin_right = 1464.0
 margin_bottom = 317.0
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 2 )
-text = "Küsimus mis tuleb automaatselt"
+text = "Küsimus mis tuleb automaatselt
+ÖäÜSA"
 align = 1
 valign = 1
 autowrap = true
@@ -116,7 +117,7 @@ margin_bottom = 355.419
 grow_horizontal = 0
 grow_vertical = 0
 rect_scale = Vector2( 2, 2 )
-group = SubResource( 2 )
+group = SubResource( 1 )
 expand_icon = true
 __meta__ = {
 "_edit_group_": true,
@@ -129,7 +130,7 @@ margin_top = 445.176
 margin_right = 612.439
 margin_bottom = 481.176
 rect_scale = Vector2( 2, 2 )
-group = SubResource( 2 )
+group = SubResource( 1 )
 expand_icon = true
 __meta__ = {
 "_edit_group_": true,
@@ -142,7 +143,7 @@ margin_top = 575.066
 margin_right = 606.003
 margin_bottom = 610.066
 rect_scale = Vector2( 2, 2 )
-group = SubResource( 2 )
+group = SubResource( 1 )
 expand_icon = true
 __meta__ = {
 "_edit_group_": true,

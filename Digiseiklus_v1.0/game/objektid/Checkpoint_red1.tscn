@@ -13,7 +13,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
-level_scene = "res://objektid/Question 2.tscn"
+level_scene = "res://objektid/Question_Box.tscn"
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.947365, -18.1681 )
