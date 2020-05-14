@@ -23,35 +23,45 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PauseMenu" type="HBoxContainer" parent="."]
-margin_left = 30.4844
-margin_top = 305.887
-margin_right = 1883.48
-margin_bottom = 1180.89
-size_flags_stretch_ratio = 0.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
+[node name="Juhend" parent="." instance=ExtResource( 4 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -587.051
+margin_top = -348.716
+margin_right = 27.9489
+margin_bottom = 526.284
+size_flags_horizontal = 9
+size_flags_vertical = 2
+size_flags_stretch_ratio = 6.62
 
-[node name="Juhend" parent="PauseMenu" instance=ExtResource( 4 )]
-size_flags_horizontal = 2
-size_flags_vertical = 1
-size_flags_stretch_ratio = 0.0
-stretch_mode = 2
-
-[node name="Alusta" parent="PauseMenu" instance=ExtResource( 2 )]
-size_flags_horizontal = 2
-size_flags_vertical = 1
-size_flags_stretch_ratio = 0.0
-stretch_mode = 2
+[node name="Alusta" parent="." instance=ExtResource( 2 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -309.773
+margin_top = -283.289
+margin_right = 305.227
+margin_bottom = 591.711
+size_flags_horizontal = 9
+size_flags_vertical = 2
+size_flags_stretch_ratio = 6.62
 next_scene_path = "res://src/Levels/Level1.tscn"
 
-[node name="Info" parent="PauseMenu" instance=ExtResource( 1 )]
-size_flags_horizontal = 2
-size_flags_vertical = 1
-size_flags_stretch_ratio = 0.0
-stretch_mode = 2
+[node name="Info" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -26.4066
+margin_top = -351.129
+margin_right = 588.593
+margin_bottom = 523.871
+size_flags_horizontal = 9
+size_flags_vertical = 2
+size_flags_stretch_ratio = 6.62
 
 [node name="Node" type="Node" parent="."]
 

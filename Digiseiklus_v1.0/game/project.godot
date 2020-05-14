@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="Digiseiklus_v1.0"
 config/description="Digiseiklus + küsimused + 2 vastast + animated cd/vent"
-run/main_scene="res://src/UserInterface.tscn"
+run/main_scene="res://src/Levels/Level1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -34,6 +34,9 @@ CheckpointRed3="*res://objektid/Checkpoint_red3.tscn"
 CheckpointGreen1="*res://objektid/Checkpoint_green1.tscn"
 CheckpointGreen2="*res://objektid/Checkpoint_green2.tscn"
 CheckpointGreen3="*res://objektid/Checkpoint_green3.tscn"
+CheckpointRed4="*res://objektid/Checkpoint_red4.tscn"
+CheckpointRed5="*res://objektid/Checkpoint_red5.tscn"
+CheckpointGreen4="*res://objektid/Checkpoint_green4.tscn"
 
 [display]
 

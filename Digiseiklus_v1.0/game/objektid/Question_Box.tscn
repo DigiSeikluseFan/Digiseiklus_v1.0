@@ -22,9 +22,9 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Sprite3"]
-anchor_left = 0.5
+anchor_left = 0.499675
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 0.499675
 anchor_bottom = 0.5
 margin_left = -696.0
 margin_top = -388.0
@@ -85,7 +85,7 @@ __meta__ = {
 }
 
 [node name="RadioBtn_conteiner" type="VBoxContainer" parent="Vastuste_container"]
-margin_right = 24.0
+margin_right = 170.0
 margin_bottom = 256.0
 size_flags_vertical = 3
 __meta__ = {
@@ -93,11 +93,13 @@ __meta__ = {
 }
 
 [node name="Vastus1" type="CheckBox" parent="Vastuste_container/RadioBtn_conteiner"]
-margin_right = 24.0
+margin_right = 170.0
 margin_bottom = 82.0
 grow_horizontal = 0
 grow_vertical = 0
 size_flags_vertical = 3
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 group = SubResource( 1 )
 expand_icon = true
 __meta__ = {
@@ -107,9 +109,11 @@ __meta__ = {
 
 [node name="Vastus2" type="CheckBox" parent="Vastuste_container/RadioBtn_conteiner"]
 margin_top = 86.0
-margin_right = 24.0
+margin_right = 170.0
 margin_bottom = 168.0
 size_flags_vertical = 3
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 group = SubResource( 1 )
 expand_icon = true
 __meta__ = {
@@ -119,10 +123,13 @@ __meta__ = {
 
 [node name="Vastus3" type="CheckBox" parent="Vastuste_container/RadioBtn_conteiner"]
 margin_top = 172.0
-margin_right = 24.0
+margin_right = 170.0
 margin_bottom = 256.0
 size_flags_vertical = 3
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 group = SubResource( 1 )
+text = "Button3 "
 expand_icon = true
 __meta__ = {
 "_edit_group_": true,
@@ -130,8 +137,8 @@ __meta__ = {
 }
 
 [node name="Vastusvariant_container" type="VBoxContainer" parent="Vastuste_container"]
-margin_left = 28.0
-margin_right = 785.0
+margin_left = 174.0
+margin_right = 784.0
 margin_bottom = 256.0
 size_flags_horizontal = 3
 alignment = 1
@@ -139,15 +146,30 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Vastusevariant1" type="Label" parent="Vastuste_container/Vastusvariant_container"]
-margin_top = 2.0
-margin_right = 757.0
-margin_bottom = 79.0
+[node name="Vastusevariant3" type="Label" parent="Vastuste_container/Vastusvariant_container"]
+visible = false
+margin_top = 22.0
+margin_right = 780.0
+margin_bottom = 59.0
 size_flags_vertical = 6
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Vastus number 1
-Lihtsalt on küsimus selline"
+text = "Vastus number 1"
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vastusevariant1" type="Label" parent="Vastuste_container/Vastusvariant_container"]
+visible = false
+margin_top = 44.0
+margin_right = 610.0
+margin_bottom = 81.0
+size_flags_vertical = 6
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Vastus number 1"
 align = 3
 valign = 1
 autowrap = true
@@ -156,29 +178,21 @@ __meta__ = {
 }
 
 [node name="Vastusevariant2" type="Label" parent="Vastuste_container/Vastusvariant_container"]
-margin_top = 88.0
-margin_right = 757.0
-margin_bottom = 165.0
+visible = false
+margin_top = 89.0
+margin_right = 610.0
+margin_bottom = 166.0
 size_flags_vertical = 6
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Vastus number 1
-Lihtsalt on küsimus selline"
+"
 valign = 1
 autowrap = true
-
-[node name="Vastusevariant3" type="Label" parent="Vastuste_container/Vastusvariant_container"]
-margin_top = 175.0
-margin_right = 757.0
-margin_bottom = 252.0
-size_flags_vertical = 6
-custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Vastus number 1
-Lihtsalt on küsimus selline"
-valign = 1
-autowrap = true
-[connection signal="pressed" from="VASTA" to="." method="_on_VASTA_pressed"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="VASTA" to="." method="_on_VASTA_button_up"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus1" to="." method="_on_Vastus1_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus2" to="." method="_on_Vastus2_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus3" to="." method="_on_Vastus3_pressed"]

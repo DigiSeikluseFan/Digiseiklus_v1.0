@@ -16,6 +16,16 @@ func _on_Play_pressed():
 		get_tree().change_scene("res://src/Levels/Level1.tscn")
 		TeleporterData.player_location = CheckpointRed3.teleport_location
 		TeleporterData.isCheckpointPassed = true
+	elif CheckpointRed4.isCheckpoint4:
+		print("Checkpoint4 läbitud")
+		get_tree().change_scene("res://src/Levels/Level1.tscn")
+		TeleporterData.player_location = CheckpointRed4.teleport_location
+		TeleporterData.isCheckpointPassed = true
+#	elif CheckpointRed5.isCheckpoint5:
+#		print("Checkpoint5 läbitud")
+#		get_tree().change_scene("res://src/Levels/Level2.tscn")
+#		TeleporterData.player_location = CheckpointRed4.teleport_location
+#		TeleporterData.isCheckpointPassed = true
 		
 func _on_Again_pressed():
 	if CheckpointRed1.isCheckpoint1:
@@ -27,6 +37,10 @@ func _on_Again_pressed():
 	elif CheckpointRed3.isCheckpoint3:
 		get_tree().change_scene("res://src/Levels/Level1.tscn")
 		TeleporterData.player_location = CheckpointRed2.teleport_location
-#	elif CheckpointRed4.isCheckpoint4:
-#		get_tree().change_scene("res://src/Levels/Level1.tscn")
-#		TeleporterData.player_location = CheckpointRed4.teleport_location
+	elif CheckpointRed4.isCheckpoint4:
+		get_tree().change_scene("res://src/Levels/Level1.tscn")
+		TeleporterData.player_location = CheckpointRed4.teleport_location
+
+
+func _on_ExitGame_button_up():
+	get_tree().quit()
