@@ -1,105 +1,92 @@
 extends Node2D
 export (String, FILE, "*.tscn") var level_scene
 export (String) var question
+export (String) var randAnswer
 export (String) var answer1
 export (String) var answer2
 export (String) var answer3
+export (Array)  var answers
 
+var questionList = TeleporterData.questionList1
+var randomList
 
-var questionList1 = { 
-	1:{
-	"number": "1.",
-	"label": "Mida peaksid oma arvutis olevate oluliste failidega tegema? ",
-	"answer1": "Mitte kellelegi neist rääkima.",
-	"answer2": "Salvestama need igaks juhuks mitmesse erinevasse kohta.",
-	"answer_right": "Tegema neist varukoopiad"
-
-	},
-	2:{
-	"number": "2.",
-	"label": "Kas veebis avaldatud pilti on võimalik kustutada?",
-	"answer2": "Jah, alati.",
-	"answer_right": "Ei ole.",
-	"answer1": "Pole teada."
-	},
-	3:{
-	"number": "3.",
-	"label": "Kas internetist leitud pilte võib sotsiaalmeedias vabalt avaldada?",
-	"answer_right": "Võib kui piltide omanik seda lubab.",
-	"answer1": "Ei või mitte kunagi.",
-	"answer2": "Internetis võib kõike vabalt avaldada."
-	},
-	4:{
-	"number": "4.",
-	"label": "Kuidas reageerid kui sõber kirjutab sulle Messengeris: “Olen lollakas ja hüppan aknast alla.”?",
-	"answer1": "Kirjutad vastuseks naeratavad emojid.",
-	"answer_right": "Helistad sõbrale ja uurid, kas see oli ikka tema ise kes kirjutas.",
-	"answer2": "Ignoreerid teda."
-	},
-	5:{
-	"number": "5.",
-	"label": "Sõber tahab sinult sinu Facebooki konto parooli saada. Kas annad?",
-	"answer1": "Kindlasti - ta ju hea sõber!",
-	"answer_right": "Üritad leida viisaka võimaluse keelduda.",
-	"answer2": "Annad sõbrale vale parooli."
-	}
-}
 onready var button_right = get_node("VASTA")
 
+var rightAnswer 
 func _ready():
-
+	
 	randomize()
-
-	var randomList1 = questionList1[randi() % questionList1.size()+1]
-
-	question = randomList1.get("label")
-	answer1 = randomList1.get("answer1")
-	answer2 = randomList1.get("answer2")
-	answer3 = randomList1.get("answer_right")
-
-	get_node("Question").set_text(question)
-	get_node("Vastuste_container/Vastusvariant_container/Vastusevariant1").set_text(answer1)
-	get_node("Vastuste_container/Vastusvariant_container/Vastusevariant2").set_text(answer2)
-	get_node("Vastuste_container/Vastusvariant_container/Vastusevariant3").set_text(answer3)
-
-
+	if CheckpointRed1.isCheckpoint1:
+		randomList = questionList[randi() % questionList.size()+1]	
+	elif TeleporterData.isCheckpointPassed and CheckpointRed2.isCheckpoint2:
+		questionList = TeleporterData.questionList2
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed3.isCheckpoint3:
+		questionList = TeleporterData.questionList3
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and TeleporterData.checkpoint == CheckpointRed3:
+		questionList = TeleporterData.questionList4
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed4.isCheckpoint4:
+		questionList = TeleporterData.questionList4
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed5.isCheckpoint5:
+		questionList = TeleporterData.questionList5
+		randomList = questionList[randi() % questionList.size()+1]
+	else:
+		print("Rohkem pole Checkpointi")
 		
+		
+	question = randomList.get("label")
+	get_node("Question").set_text(question)
+	
+	var answersL = []
+	for ans in randomList.values():
+		if ans == randomList.get("answer1") or ans == randomList.get("answer2"): 
+			answersL.insert(0, ans)
+		if ans == randomList.get("answer_right"):
+			answersL.insert(0, ans)
+			rightAnswer = ans
+	print(answersL)
+	get_node("Vastuste_container/RadioBtn_conteiner/Vastus1").set_text(answersL[0]) 
+	get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").set_text(answersL[1])    
+	get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").set_text(answersL[2])
+	
+	print(randomList, " Checkpoint" )
+	
+
 	button_right.connect("pressed", self, "_on_VASTA_pressed", [get_name()])
 var counter = 0	
 
 func _on_Vastus1_pressed():
-	if answer1 == answer3:
+	if rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus1").text:
 		counter += 1
-		print(counter)
+		print(counter, rightAnswer)
+		TeleporterData.isCheckpointPassed = true
 	else:
-		print("Ei ole õige vastus")
-	
+		print("Vale vastus")
+
 func _on_Vastus2_pressed():
-	
-	if answer2 == answer3:
+	if  rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").text:
 		counter += 1
-		print(counter)
+		print(counter, rightAnswer)
+		TeleporterData.isCheckpointPassed = true
 	else:
-		print("EI ole õige vastus")
+		print("Vale vastus")
+	
 
 func _on_Vastus3_pressed():
-	
-	if answer3 == answer3:
+	if rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").text:
 		counter += 1
-		print(counter)
+		print(counter," ", rightAnswer)
+		TeleporterData.isCheckpointPassed = true
 	else:
-		print("Ei ole õige vastus")
+		print("vale vastus")
 	
 
-func _lihtsalt():
-	if counter >= 1:
-		get_tree().change_scene(level_scene)
-	else:
-		get_tree().change_scene("res://objektid/Question_AnswerWrong.tscn")
-
-
-func _on_VASTA_pressed():
+func _on_VASTA_button_up():
 	if counter >= 1:
 		get_tree().change_scene("res://objektid/Question_AnswerRight.tscn")
 	else:
 		get_tree().change_scene("res://objektid/Question_AnswerWrong.tscn")	
+
