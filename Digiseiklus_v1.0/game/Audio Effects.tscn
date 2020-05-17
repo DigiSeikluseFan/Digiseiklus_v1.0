@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/taust3.wav" type="AudioStream" id=1]
+
+[node name="Audio Effects" type="Node"]
+
+[node name="Taustamuusika" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -2.36768, -14.4722 )
+stream = ExtResource( 1 )
+volume_db = -12.359
+autoplay = true

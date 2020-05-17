@@ -37,6 +37,7 @@ CheckpointGreen3="*res://objektid/Checkpoint_green3.tscn"
 CheckpointRed4="*res://objektid/Checkpoint_red4.tscn"
 CheckpointRed5="*res://objektid/Checkpoint_red5.tscn"
 CheckpointGreen4="*res://objektid/Checkpoint_green4.tscn"
+FadeInOut="*res://src/Fade_in_out.gd"
 
 [display]
 

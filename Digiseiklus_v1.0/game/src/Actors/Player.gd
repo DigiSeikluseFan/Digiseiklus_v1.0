@@ -19,8 +19,6 @@ func get_direction() -> Vector2:
 	if Input.is_action_pressed("move_right"):
 		$AnimatedSprite.play("run")
 		$AnimatedSprite.flip_h = false
-		var moving = $"AudioEffects/AudioStreamPlayer"
-		moving.play()
 	elif Input.is_action_pressed("move_left"): 
 		$AnimatedSprite.play("run")
 		$AnimatedSprite.flip_h = true

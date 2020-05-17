@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://objektid/Question.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/küsimuste_popup_puhas.png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/taust_FINAL (1).png" type="Texture" id=3]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://assets/taustamuusika2.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/Xerox_Serif_dynamicfon_Title.tres" type="DynamicFont" id=6]
 
 [sub_resource type="ButtonGroup" id=1]
 
@@ -26,10 +27,10 @@ anchor_left = 0.499675
 anchor_top = 0.5
 anchor_right = 0.499675
 anchor_bottom = 0.5
-margin_left = -696.0
-margin_top = -388.0
-margin_right = 696.0
-margin_bottom = 388.0
+margin_left = -686.541
+margin_top = -375.631
+margin_right = 705.459
+margin_bottom = 400.369
 texture = ExtResource( 2 )
 expand = true
 __meta__ = {
@@ -42,29 +43,15 @@ self_modulate = Color( 0.0470588, 0, 0, 1 )
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = 578.0
-margin_top = 323.0
+margin_top = 336.824
 margin_right = 1345.0
-margin_bottom = 400.0
+margin_bottom = 413.824
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 text = "Küsimus mis tuleb automaatselt"
 align = 1
 valign = 1
 autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="VASTA" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 869.45
-margin_top = 709.335
-margin_right = 1054.45
-margin_bottom = 767.335
-text = "VASTA"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -75,28 +62,40 @@ __meta__ = {
 stream = ExtResource( 5 )
 autoplay = true
 
+[node name="VASTA" type="Button" parent="."]
+modulate = Color( 0.996078, 0.968627, 0.968627, 1 )
+self_modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
+margin_left = 955.0
+margin_top = 710.0
+margin_right = 1108.0
+margin_bottom = 763.0
+size_flags_horizontal = 5
+text = "VASTA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Vastuste_container" type="HBoxContainer" parent="."]
-margin_left = 635.195
-margin_top = 428.141
-margin_right = 1420.19
-margin_bottom = 684.141
+margin_left = 633.012
+margin_top = 433.234
+margin_right = 1418.01
+margin_bottom = 689.234
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="RadioBtn_conteiner" type="VBoxContainer" parent="Vastuste_container"]
-margin_right = 170.0
+margin_right = 784.0
 margin_bottom = 256.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Vastus1" type="CheckBox" parent="Vastuste_container/RadioBtn_conteiner"]
-margin_right = 170.0
+margin_right = 784.0
 margin_bottom = 82.0
-grow_horizontal = 0
-grow_vertical = 0
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -109,7 +108,7 @@ __meta__ = {
 
 [node name="Vastus2" type="CheckBox" parent="Vastuste_container/RadioBtn_conteiner"]
 margin_top = 86.0
-margin_right = 170.0
+margin_right = 784.0
 margin_bottom = 168.0
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 4 )
@@ -123,7 +122,7 @@ __meta__ = {
 
 [node name="Vastus3" type="CheckBox" parent="Vastuste_container/RadioBtn_conteiner"]
 margin_top = 172.0
-margin_right = 170.0
+margin_right = 784.0
 margin_bottom = 256.0
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 4 )
@@ -135,64 +134,7 @@ __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
-
-[node name="Vastusvariant_container" type="VBoxContainer" parent="Vastuste_container"]
-margin_left = 174.0
-margin_right = 784.0
-margin_bottom = 256.0
-size_flags_horizontal = 3
-alignment = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Vastusevariant3" type="Label" parent="Vastuste_container/Vastusvariant_container"]
-visible = false
-margin_top = 22.0
-margin_right = 780.0
-margin_bottom = 59.0
-size_flags_vertical = 6
-custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Vastus number 1"
-valign = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Vastusevariant1" type="Label" parent="Vastuste_container/Vastusvariant_container"]
-visible = false
-margin_top = 44.0
-margin_right = 610.0
-margin_bottom = 81.0
-size_flags_vertical = 6
-custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Vastus number 1"
-align = 3
-valign = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Vastusevariant2" type="Label" parent="Vastuste_container/Vastusvariant_container"]
-visible = false
-margin_top = 89.0
-margin_right = 610.0
-margin_bottom = 166.0
-size_flags_vertical = 6
-custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Vastus number 1
-"
-valign = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="button_up" from="VASTA" to="." method="_on_VASTA_button_up"]
+[connection signal="pressed" from="VASTA" to="." method="_on_VASTA_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus1" to="." method="_on_Vastus1_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus2" to="." method="_on_Vastus2_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus3" to="." method="_on_Vastus3_pressed"]

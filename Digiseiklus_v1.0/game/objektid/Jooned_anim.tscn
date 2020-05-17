@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Jooned_anim" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 614.135, 104.247 )
+scale = Vector2( 0.781734, 0.778019 )

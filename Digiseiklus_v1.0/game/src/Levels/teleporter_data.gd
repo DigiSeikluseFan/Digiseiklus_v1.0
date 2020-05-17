@@ -24,7 +24,7 @@ var questionList1 = {
 		"label": "Mida peaksid oma arvutis olevate oluliste failidega tegema? ",
 		"answer1": "Mitte kellelegi neist rääkima.",
 		"answer2": "Salvestama need igaks juhuks mitmesse erinevasse kohta.",
-		"answer_right":"Tegema neist varukoopiad"	
+		"answer_right": "Tegema neist varukoopiad."	
 	 
 	},
 	2:{
@@ -36,9 +36,9 @@ var questionList1 = {
 	},
 	3:{
 		"label": "Kas internetist leitud pilte võib sotsiaalmeedias vabalt avaldada?",
-		"answer_right":"Võib kui piltide omanik seda lubab.",
-		"answer2":"Ei või mitte kunagi.",
-		"answer1":"Internetis võib kõike vabalt avaldada."
+		"answer_right": "Võib kui piltide omanik seda lubab.",
+		"answer2": "Ei või mitte kunagi.",
+		"answer1": "Internetis võib kõike vabalt avaldada."
 	}
 }
 var questionList2 = {

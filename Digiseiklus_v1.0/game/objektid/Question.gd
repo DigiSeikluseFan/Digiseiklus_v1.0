@@ -10,6 +10,7 @@ export (Array)  var answers
 var questionList = TeleporterData.questionList1
 var randomList
 
+
 onready var button_right = get_node("VASTA")
 
 var rightAnswer 
@@ -44,17 +45,16 @@ func _ready():
 	for ans in randomList.values():
 		if ans == randomList.get("answer1") or ans == randomList.get("answer2"): 
 			answersL.insert(0, ans)
-		if ans == randomList.get("answer_right"):
-			answersL.insert(0, ans)
-			rightAnswer = ans
-	print(answersL)
+		else: 
+			if ans == randomList.get("answer_right"):
+				rightAnswer = ans
+				answersL.insert(0, ans)
+					
+
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus1").set_text(answersL[0]) 
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").set_text(answersL[1])    
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").set_text(answersL[2])
 	
-	print(randomList, " Checkpoint" )
-	
-
 	button_right.connect("pressed", self, "_on_VASTA_pressed", [get_name()])
 var counter = 0	
 
@@ -84,7 +84,7 @@ func _on_Vastus3_pressed():
 		print("vale vastus")
 	
 
-func _on_VASTA_button_up():
+func _on_VASTA_pressed():
 	if counter >= 1:
 		get_tree().change_scene("res://objektid/Question_AnswerRight.tscn")
 	else:

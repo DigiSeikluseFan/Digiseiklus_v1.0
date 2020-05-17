@@ -1,9 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/objektid/Õhem_valgusvihk_pun.png" type="Texture" id=1]
 [ext_resource path="res://objektid/Checkpoint_red1.gd" type="Script" id=2]
+[ext_resource path="res://assets/objektid/anim/punanevihk7.png" type="Texture" id=8]
+[ext_resource path="res://assets/objektid/anim/punanevihk11.png" type="Texture" id=10]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 44.0194, 528.73 )
 
 [node name="Checkpoint_red1" type="Area2D"]
@@ -15,12 +24,13 @@ __meta__ = {
 }
 level_scene = "res://objektid/Question_Box.tscn"
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 position = Vector2( -0.0526276, 0.83194 )
 scale = Vector2( 0.375105, 0.758557 )
-texture = ExtResource( 1 )
+frames = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 4.42543, -249.822 )
-shape = SubResource( 1 )
+visible = false
+position = Vector2( 4.42543, -229.704 )
+shape = SubResource( 2 )
 [connection signal="body_entered" from="." to="." method="_on_Checkpoint_red1_body_entered"]
