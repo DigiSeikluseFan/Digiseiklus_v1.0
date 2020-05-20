@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -23,9 +23,25 @@
 [ext_resource path="res://objektid/Checkpoint_green4.tscn" type="PackedScene" id=21]
 [ext_resource path="res://objektid/Checkpoint_red4.tscn" type="PackedScene" id=22]
 [ext_resource path="res://objektid/Checkpoint_red5.tscn" type="PackedScene" id=23]
+[ext_resource path="res://objektid/smallCD.tscn" type="PackedScene" id=24]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7761.66, 6.36108 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
 
 [node name="Level1" type="Node2D"]
 position = Vector2( 1, -1 )
@@ -154,7 +170,7 @@ position = Vector2( 70805.6, 1428.57 )
 scale = Vector2( 12.1806, 5.73016 )
 
 [node name="Must_pind10" parent="Pind" instance=ExtResource( 6 )]
-position = Vector2( 80972.2, 1444.44 )
+position = Vector2( 80518.2, 1404.53 )
 scale = Vector2( 3.712, 5.73 )
 
 [node name="Must_pind11" parent="Pind" instance=ExtResource( 6 )]
@@ -163,6 +179,10 @@ scale = Vector2( 4.909, 5.73 )
 
 [node name="Must_pind12" parent="Pind" instance=ExtResource( 6 )]
 position = Vector2( 100764, 1428.57 )
+scale = Vector2( 4.034, 5.73 )
+
+[node name="Must_pind14" parent="Pind" instance=ExtResource( 6 )]
+position = Vector2( 95747.3, 1346.27 )
 scale = Vector2( 4.034, 5.73 )
 
 [node name="Must_pind13" parent="Pind" instance=ExtResource( 6 )]
@@ -244,29 +264,6 @@ position = Vector2( 42451.3, -611.253 )
 [node name="ram23" parent="Ram" instance=ExtResource( 1 )]
 position = Vector2( 43676.9, -611.254 )
 
-[node name="Animated_CD" type="Node2D" parent="."]
-position = Vector2( 1645.3, 204.62 )
-scale = Vector2( 0.418745, 0.420926 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CD1" parent="Animated_CD" instance=ExtResource( 16 )]
-position = Vector2( 17450.6, 1444.61 )
-scale = Vector2( 2.38809, 2.37571 )
-
-[node name="CD2" parent="Animated_CD" instance=ExtResource( 16 )]
-position = Vector2( 25167, 1521.22 )
-scale = Vector2( 2.38809, 2.37571 )
-
-[node name="CD3" parent="Animated_CD" instance=ExtResource( 16 )]
-position = Vector2( 26698.8, 1518.87 )
-scale = Vector2( 2.38809, 2.37571 )
-
-[node name="CD4" parent="Animated_CD" instance=ExtResource( 16 )]
-position = Vector2( 1699.35, 1427.27 )
-scale = Vector2( 2.38809, 2.37571 )
-
 [node name="Animated_Vent_Suur" type="Node2D" parent="."]
 position = Vector2( 1645.3, 204.62 )
 scale = Vector2( 0.418745, 0.420926 )
@@ -284,7 +281,7 @@ position = Vector2( 4018.19, 1207.77 )
 position = Vector2( 9304.88, 1202.88 )
 
 [node name="Anim_Vent_Suur_5" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
-position = Vector2( 22493, 1205.79 )
+position = Vector2( 23660.3, 1212.29 )
 
 [node name="Anim_Vent_Suur_6" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 29334, 1207.93 )
@@ -340,11 +337,15 @@ position = Vector2( 204423, 2577.78 )
 scale = Vector2( 9.30544, 9.35391 )
 
 [node name="Vaike_Vent_7" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( 227111, 2600 )
+position = Vector2( 225447, 2555.04 )
 scale = Vector2( 9.30544, 9.35391 )
 
 [node name="Vaike_Vent_8" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( 243578, 2577.78 )
+position = Vector2( 245376, 2577.77 )
+scale = Vector2( 9.30544, 9.35391 )
+
+[node name="Vaike_Vent_18" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( 238134, 2623.38 )
 scale = Vector2( 9.30544, 9.35391 )
 
 [node name="Vaike_Vent_9" parent="Vaike_Vent" instance=ExtResource( 17 )]
@@ -434,59 +435,59 @@ position = Vector2( 153014, 2938.41 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane12" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 161489, -666.667 )
+position = Vector2( 161455, -362.046 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastased_Roheline" type="Node2D" parent="."]
-position = Vector2( 14967, 486 )
+position = Vector2( 14681.4, 486 )
 scale = Vector2( 0.045, 0.045 )
 
 [node name="Vastane_Roheline1" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -250.406, 103.853 )
+position = Vector2( 5811.59, 271.465 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline2" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -9944.59, -3279.01 )
+position = Vector2( -4301.66, -3055.52 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline3" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -7218.13, 6566.64 )
+position = Vector2( -4284.91, 6650.44 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline4" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -30494.3, 6465.66 )
+position = Vector2( -24721.9, 6812 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline5" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -46598.1, 34.7656 )
+position = Vector2( -41348.1, 184.769 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline6" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -56961.9, -2091.15 )
+position = Vector2( -51811.8, -1941.15 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline_CP juures" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -65379.4, 1123.42 )
+position = Vector2( -61729.2, 1173.42 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline7" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -83164, 6465.66 )
+position = Vector2( -80870.8, 6555.58 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline8" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -99905.5, 2851.59 )
+position = Vector2( -92086.8, 2962.89 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline9" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -108197, 566.234 )
+position = Vector2( -100796, 705.354 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline10" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -125098, 3436.22 )
+position = Vector2( -118103, 3380.48 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline11" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -131316, -443.578 )
+position = Vector2( -126801, -192.765 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline12" parent="Vastased_Roheline" instance=ExtResource( 19 )]
@@ -494,27 +495,27 @@ position = Vector2( 13111.1, 6622.22 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline13" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 16488.9, 4088.89 )
+position = Vector2( 25595.8, 4088.88 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline14" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 24644.5, 733.332 )
+position = Vector2( 33779.3, 900.945 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline15" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 39088.9, 6400 )
+position = Vector2( 41158, 6675.89 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline16" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 48022.1, -1600 )
+position = Vector2( 57094.2, -1534.73 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline17" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 64244.5, -1644.45 )
+position = Vector2( 67703.6, -1579.18 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline18" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 72155.5, 6577.78 )
+position = Vector2( 75745.2, 6577.78 )
 scale = Vector2( 1, 1 )
 
 [node name="Fall_Checkpoint_1" type="Area2D" parent="."]
@@ -537,34 +538,35 @@ __meta__ = {
 }
 
 [node name="Checkpoint_red1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3721.56, 541.903 )
+position = Vector2( 3731.88, 703.09 )
 
 [node name="Checkpoint_green1" parent="." instance=ExtResource( 12 )]
 visible = false
-position = Vector2( 3730.46, 781.327 )
+position = Vector2( 3742.43, 763.21 )
 
 [node name="Checkpoint_red2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 7261.35, 657.017 )
+position = Vector2( 7267.21, 809.043 )
 
 [node name="Checkpoint_green2" parent="." instance=ExtResource( 13 )]
 visible = false
-position = Vector2( 7279.11, 785.903 )
+position = Vector2( 7271.04, 755.95 )
 
 [node name="Checkpoint_red3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 10828.3, 660.711 )
+position = Vector2( 11172.3, 784.144 )
 
 [node name="Checkpoint_green3" parent="." instance=ExtResource( 14 )]
 visible = false
-position = Vector2( 11784.8, 785.846 )
+position = Vector2( 11169.7, 648.249 )
 
 [node name="Checkpoint_red4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 14325, 591 )
+position = Vector2( 14319.5, 730.621 )
 
 [node name="Checkpoint_green" parent="." instance=ExtResource( 21 )]
-position = Vector2( 14326, 676 )
+visible = false
+position = Vector2( 14328, 803.48 )
 
 [node name="Checkpoint_red5" parent="." instance=ExtResource( 23 )]
-position = Vector2( 19104, 591 )
+position = Vector2( 19006.9, 811.56 )
 
 [node name="CP1" type="Position2D" parent="."]
 position = Vector2( 3877.99, 811.591 )
@@ -573,7 +575,31 @@ position = Vector2( 3877.99, 811.591 )
 position = Vector2( 7402.33, 700.833 )
 
 [node name="CP3" type="Position2D" parent="."]
-position = Vector2( 11794.5, 576.385 )
+position = Vector2( 11404.9, 643.923 )
+
+[node name="CD" parent="." instance=ExtResource( 16 )]
+position = Vector2( 2412.76, 762.281 )
+
+[node name="CD2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 4409.54, 638.607 )
+
+[node name="CD3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 5817.17, 917.435 )
+
+[node name="CD4" parent="." instance=ExtResource( 16 )]
+position = Vector2( 15365, 632.45 )
+
+[node name="CD5" parent="." instance=ExtResource( 16 )]
+position = Vector2( 17483.8, 645.406 )
+
+[node name="smallCD" parent="." instance=ExtResource( 24 )]
+position = Vector2( 7713.62, 762.955 )
+
+[node name="smallCD2" parent="." instance=ExtResource( 24 )]
+position = Vector2( 9190.87, 768.686 )
+
+[node name="smallCD3" parent="." instance=ExtResource( 24 )]
+position = Vector2( 13308.3, 539.586 )
 
 [node name="Audio Effects" type="Node" parent="."]
 
@@ -582,3 +608,15 @@ position = Vector2( -3.36768, -13.4722 )
 stream = ExtResource( 15 )
 volume_db = -20.129
 autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1941.0
+margin_bottom = 1089.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "fade_out"
+anims/fade_out = SubResource( 2 )

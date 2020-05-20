@@ -15,9 +15,12 @@ func _ready():
 		print("Chippy location2: ", location)
 		get_node("Checkpoint_green2").visible = true
 		get_node("Checkpoint_red2").visible = false
-	if location >= CheckpointRed3.teleport_location and TeleporterData.isCheckpointPassed == true:
+	if location >= CheckpointRed3.teleport_location and location <= get_node("Checkpoint_red4").teleport_location and TeleporterData.isCheckpointPassed == true:
 		print("Chippy location3: ", location)
 		get_node("Checkpoint_green3").visible = true
 		get_node("Checkpoint_red3").visible = false
-		
+	if location >= CheckpointRed4.teleport_location and location <= get_node("Checkpoint_red5").teleport_location and TeleporterData.isCheckpointPassed == true:
+		print("Chippy location3: ", location)
+		get_node("Checkpoint_green3").visible = true
+		get_node("Checkpoint_red4").visible = false
 	
