@@ -1,6 +1,6 @@
 extends Area2D
 export(String, FILE, "*.tscn") var level_scene
-export (Vector2) var teleport_location = Vector2(11794.5, 576.385)
+export (Vector2) var teleport_location = Vector2(19104, 591)
 var isCheckpoint5 = true
 
 func _physics_process(delta):
