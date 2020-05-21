@@ -584,22 +584,22 @@ position = Vector2( 2412.76, 762.281 )
 position = Vector2( 4409.54, 638.607 )
 
 [node name="CD3" parent="." instance=ExtResource( 16 )]
-position = Vector2( 5817.17, 917.435 )
+position = Vector2( 5798.97, 696.589 )
 
 [node name="CD4" parent="." instance=ExtResource( 16 )]
-position = Vector2( 15365, 632.45 )
+position = Vector2( 15511.2, 657.813 )
 
 [node name="CD5" parent="." instance=ExtResource( 16 )]
-position = Vector2( 17483.8, 645.406 )
+position = Vector2( 17494.2, 667.786 )
 
 [node name="smallCD" parent="." instance=ExtResource( 24 )]
-position = Vector2( 7713.62, 762.955 )
+position = Vector2( 8174.22, 678.653 )
 
 [node name="smallCD2" parent="." instance=ExtResource( 24 )]
-position = Vector2( 9190.87, 768.686 )
+position = Vector2( 9631.86, 680.461 )
 
 [node name="smallCD3" parent="." instance=ExtResource( 24 )]
-position = Vector2( 13308.3, 539.586 )
+position = Vector2( 13136.7, 557.49 )
 
 [node name="Audio Effects" type="Node" parent="."]
 

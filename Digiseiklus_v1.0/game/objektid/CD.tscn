@@ -42,25 +42,25 @@ tracks/0/keys = {
 [node name="CD" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 10.862, 1.10797 )
+position = Vector2( 10.8619, 1.10797 )
 rotation = -1.56629
 scale = Vector2( 0.999999, 0.999998 )
 motion/sync_to_physics = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
-position = Vector2( 0.165649, -7.36768 )
+position = Vector2( 0.453081, -12.0772 )
 rotation = 1.56629
-scale = Vector2( 0.35452, 0.353659 )
+scale = Vector2( 0.223718, 0.233134 )
 frames = SubResource( 1 )
+frame = 2
 playing = true
 
 [node name="Area2D" type="Area2D" parent="KinematicBody2D/AnimatedSprite"]
-position = Vector2( -7.96427, 15.9663 )
-scale = Vector2( 1, 1 )
+position = Vector2( -7.96436, 1.46069 )
 script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/AnimatedSprite/Area2D"]
-position = Vector2( 19.4432, -6.80261 )
+position = Vector2( 8.69501, 0.611834 )
 rotation = -1.96798e-17
 scale = Vector2( 2.82071, 2.82758 )
 shape = SubResource( 2 )

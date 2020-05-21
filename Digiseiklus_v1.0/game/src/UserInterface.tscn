@@ -38,6 +38,7 @@ margin_left = 534.22
 margin_top = 546.021
 margin_right = 721.22
 margin_bottom = 728.021
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 9 )
 expand = true
