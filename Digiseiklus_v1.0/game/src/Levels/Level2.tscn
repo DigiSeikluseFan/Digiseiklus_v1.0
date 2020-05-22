@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -24,6 +24,8 @@
 [ext_resource path="res://objektid/Checkpoint_red4.tscn" type="PackedScene" id=22]
 [ext_resource path="res://objektid/Checkpoint_red5.tscn" type="PackedScene" id=23]
 [ext_resource path="res://objektid/smallCD.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/Background/Level2/level2_01.png" type="Texture" id=25]
+[ext_resource path="res://assets/Background/Level2/level2_02.png" type="Texture" id=26]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7761.66, 6.36108 )
@@ -43,7 +45,7 @@ tracks/0/keys = {
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
 
-[node name="Level1" type="Node2D"]
+[node name="Level2" type="Node2D"]
 position = Vector2( 1, -1 )
 script = ExtResource( 9 )
 __meta__ = {
@@ -71,6 +73,7 @@ __meta__ = {
 }
 
 [node name="Taust_Clean_3" type="Sprite" parent="Taust"]
+visible = false
 position = Vector2( 4799, 541 )
 texture = ExtResource( 4 )
 __meta__ = {
@@ -78,6 +81,7 @@ __meta__ = {
 }
 
 [node name="Taust_Clean_4" type="Sprite" parent="Taust"]
+visible = false
 position = Vector2( 6719, 541 )
 texture = ExtResource( 8 )
 __meta__ = {
@@ -85,6 +89,7 @@ __meta__ = {
 }
 
 [node name="Taust_Clean_5" type="Sprite" parent="Taust"]
+visible = false
 position = Vector2( 8639, 541 )
 texture = ExtResource( 4 )
 __meta__ = {
@@ -92,6 +97,7 @@ __meta__ = {
 }
 
 [node name="Taust_Clean_6" type="Sprite" parent="Taust"]
+visible = false
 position = Vector2( 10559, 541 )
 texture = ExtResource( 8 )
 __meta__ = {
@@ -99,6 +105,7 @@ __meta__ = {
 }
 
 [node name="Taust_Clean_7" type="Sprite" parent="Taust"]
+visible = false
 position = Vector2( 12479, 541 )
 texture = ExtResource( 4 )
 __meta__ = {
@@ -106,6 +113,7 @@ __meta__ = {
 }
 
 [node name="Taust_Clean_8" type="Sprite" parent="Taust"]
+visible = false
 position = Vector2( 14399, 541 )
 texture = ExtResource( 8 )
 __meta__ = {
@@ -126,6 +134,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="level2_01" type="Sprite" parent="Taust"]
+position = Vector2( 116, -1120 )
+scale = Vector2( 0.394156, 0.309811 )
+texture = ExtResource( 25 )
+
+[node name="level2_02" type="Sprite" parent="Taust"]
+position = Vector2( 3358, -1105 )
+scale = Vector2( 0.394156, 0.309811 )
+texture = ExtResource( 26 )
+
 [node name="Pind" type="Node2D" parent="."]
 position = Vector2( 3697, 688 )
 scale = Vector2( 0.144, 0.126 )
@@ -134,16 +152,16 @@ __meta__ = {
 }
 
 [node name="Must_pind1" parent="Pind" instance=ExtResource( 6 )]
-position = Vector2( -24166.7, 1396.83 )
+position = Vector2( -25760.2, 1418.78 )
 scale = Vector2( 3.39583, 5.5873 )
 
 [node name="Must_pind2" parent="Pind" instance=ExtResource( 6 )]
-position = Vector2( -13791.7, 1412.7 )
+position = Vector2( -12559.6, 1429.64 )
 scale = Vector2( 5.17361, 5.74603 )
 
 [node name="Must_pind3" parent="Pind" instance=ExtResource( 6 )]
-position = Vector2( -1513, 1404.76 )
-scale = Vector2( 7.47222, 5.73016 )
+position = Vector2( -638.889, 1428.57 )
+scale = Vector2( 3.587, 5.73 )
 
 [node name="Must_pind4" parent="Pind" instance=ExtResource( 6 )]
 position = Vector2( 12000, 1412.7 )
@@ -182,7 +200,7 @@ position = Vector2( 100764, 1428.57 )
 scale = Vector2( 4.034, 5.73 )
 
 [node name="Must_pind14" parent="Pind" instance=ExtResource( 6 )]
-position = Vector2( 95784.7, 1428.57 )
+position = Vector2( 95747.3, 1346.27 )
 scale = Vector2( 4.034, 5.73 )
 
 [node name="Must_pind13" parent="Pind" instance=ExtResource( 6 )]
@@ -197,21 +215,22 @@ __meta__ = {
 }
 
 [node name="ram1" parent="Ram" instance=ExtResource( 1 )]
+position = Vector2( -679.487, -248.082 )
 
 [node name="ram2" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 1041.03, -363.171 )
+position = Vector2( 246.154, 237.852 )
 
 [node name="ram3" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 3738.46, -524.297 )
+position = Vector2( 1292.31, -102.302 )
 
 [node name="ram4" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 5048.72, -483.376 )
+position = Vector2( 4376.92, 40.9207 )
 
 [node name="ram5" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 9038.46, 107.417 )
+position = Vector2( 5425.64, -401.535 )
 
 [node name="ram6" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 10143.6, -81.8414 )
+position = Vector2( 6530.77, -127.877 )
 
 [node name="ram7" parent="Ram" instance=ExtResource( 1 )]
 position = Vector2( 13991, 9.93301 )
@@ -269,13 +288,13 @@ position = Vector2( 1645.3, 204.62 )
 scale = Vector2( 0.418745, 0.420926 )
 
 [node name="Anim_Vent_Suur_1" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
-position = Vector2( 196.539, 1203.63 )
+position = Vector2( 426.751, 1207.77 )
 
 [node name="Anim_Vent_Suur_2" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
-position = Vector2( 3490.5, 682.388 )
+position = Vector2( 3927.69, 3683.26 )
 
 [node name="Anim_Vent_Suur_3" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
-position = Vector2( 4018.19, 1207.77 )
+position = Vector2( 3082.31, 4041.99 )
 
 [node name="Anim_Vent_Suur_4" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 9304.88, 1202.88 )
@@ -300,7 +319,7 @@ __meta__ = {
 }
 
 [node name="Vent_2" parent="Suur_Vent" instance=ExtResource( 7 )]
-position = Vector2( 3293.17, 0 )
+position = Vector2( 4678.26, 2629.92 )
 
 [node name="Vent_6" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 16396.6, 2.37573 )
@@ -313,15 +332,15 @@ position = Vector2( 683, 651 )
 scale = Vector2( 0.045, 0.045 )
 
 [node name="Vaike_Vent_1" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( 19644.5, 2577.78 )
+position = Vector2( -11711.1, 2600 )
 scale = Vector2( 9.30545, 9.35391 )
 
 [node name="Vaike_Vent_2" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( 27000, 2555.56 )
+position = Vector2( 21755.5, 2600 )
 scale = Vector2( 9.30545, 9.35391 )
 
 [node name="Vaike_Vent_3" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( 104378, 2555.56 )
+position = Vector2( 26688.9, -2311.11 )
 scale = Vector2( 9.30544, 9.35391 )
 
 [node name="Vaike_Vent_4" parent="Vaike_Vent" instance=ExtResource( 17 )]
@@ -384,10 +403,6 @@ scale = Vector2( 9.30544, 9.35391 )
 position = Vector2( 394111, 133.333 )
 scale = Vector2( 9.30544, 9.35391 )
 
-[node name="Vaike_Vent_19" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( 357267, 2600 )
-scale = Vector2( 9.30544, 9.35391 )
-
 [node name="Vastased_Punane" type="Node2D" parent="."]
 position = Vector2( 683, 651 )
 scale = Vector2( 0.045, 0.045 )
@@ -396,26 +411,27 @@ __meta__ = {
 }
 
 [node name="Vastane_Punane1" parent="Vastased_Punane" instance=ExtResource( 18 )]
+position = Vector2( -8088.89, -2066.67 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane2" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 12167.3, -3136.85 )
+position = Vector2( 5088.89, 2088.89 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane3" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 33133.3, -4533.33 )
+position = Vector2( 14133.3, -888.891 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane4" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 44222.2, -4222.22 )
+position = Vector2( 28644.4, 2888.89 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane5" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 78866.7, 933.333 )
+position = Vector2( 39577.8, -244.445 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane6" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 89333.3, -755.556 )
+position = Vector2( 58688.9, -1155.56 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Punane7" parent="Vastased_Punane" instance=ExtResource( 18 )]
@@ -582,28 +598,28 @@ position = Vector2( 7402.33, 700.833 )
 position = Vector2( 11404.9, 643.923 )
 
 [node name="CD" parent="." instance=ExtResource( 16 )]
-position = Vector2( 2412.76, 762.281 )
+position = Vector2( 1463, 810 )
 
 [node name="CD2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 4409.54, 638.607 )
+position = Vector2( 2625, 854 )
 
 [node name="CD3" parent="." instance=ExtResource( 16 )]
-position = Vector2( 5798.97, 696.589 )
+position = Vector2( 3040, 851 )
 
 [node name="CD4" parent="." instance=ExtResource( 16 )]
-position = Vector2( 15511.2, 657.813 )
+position = Vector2( 15365, 632.45 )
 
 [node name="CD5" parent="." instance=ExtResource( 16 )]
-position = Vector2( 17494.2, 667.786 )
+position = Vector2( 17483.8, 645.406 )
 
 [node name="smallCD" parent="." instance=ExtResource( 24 )]
-position = Vector2( 8174.22, 678.653 )
+position = Vector2( 7713.62, 762.955 )
 
 [node name="smallCD2" parent="." instance=ExtResource( 24 )]
-position = Vector2( 9631.86, 680.461 )
+position = Vector2( 9190.87, 768.686 )
 
 [node name="smallCD3" parent="." instance=ExtResource( 24 )]
-position = Vector2( 13136.7, 557.49 )
+position = Vector2( 13308.3, 539.586 )
 
 [node name="Audio Effects" type="Node" parent="."]
 
@@ -614,6 +630,7 @@ volume_db = -20.129
 autoplay = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 margin_right = 1941.0
 margin_bottom = 1089.0
 color = Color( 0, 0, 0, 1 )
