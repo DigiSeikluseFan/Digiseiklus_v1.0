@@ -26,7 +26,8 @@ func get_direction() -> Vector2:
 		$AnimatedSprite.play("jump")
 	else:
 		$AnimatedSprite.play("idle")
-	
+	if Input.is_action_pressed("ui_cancel"):
+		get_tree().change_scene("res://src/UserInterface.tscn")
 	return Vector2(
 		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
 		-Input.get_action_strength("jump") if is_on_floor() and Input.is_action_just_pressed("jump") else 0.0

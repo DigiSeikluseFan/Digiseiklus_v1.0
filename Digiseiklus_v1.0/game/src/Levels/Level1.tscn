@@ -561,9 +561,9 @@ position = Vector2( 11169.7, 648.249 )
 [node name="Checkpoint_red4" parent="." instance=ExtResource( 22 )]
 position = Vector2( 14319.5, 730.621 )
 
-[node name="Checkpoint_green" parent="." instance=ExtResource( 21 )]
+[node name="Checkpoint_green4" parent="." instance=ExtResource( 21 )]
 visible = false
-position = Vector2( 14328, 803.48 )
+position = Vector2( 14321.7, 802.07 )
 
 [node name="Checkpoint_red5" parent="." instance=ExtResource( 23 )]
 position = Vector2( 19006.9, 811.56 )

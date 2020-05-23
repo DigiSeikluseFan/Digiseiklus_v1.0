@@ -2,7 +2,9 @@ extends Control
 
 onready var soundON = get_node("SoundON2")
 onready var soundOFF = get_node("SoundOFF")
-
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
 func _on_Exit_pressed():
 	get_tree().quit()
 

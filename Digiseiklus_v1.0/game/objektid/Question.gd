@@ -7,6 +7,7 @@ export (String) var answer2
 export (String) var answer3
 export (Array)  var answers
 
+
 var questionList = TeleporterData.questionList1
 var randomList
 
@@ -15,7 +16,7 @@ onready var button_right = get_node("VASTA")
 
 var rightAnswer 
 func _ready():
-	
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	randomize()
 	if CheckpointRed1.isCheckpoint1:
 		randomList = questionList[randi() % questionList.size()+1]	

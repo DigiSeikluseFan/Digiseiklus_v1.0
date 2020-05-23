@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32.8917, 50.6146 )
 
-[node name="Checkpoint_green" type="Area2D"]
+[node name="Checkpoint_green4" type="Area2D"]
 position = Vector2( 1.04845, -42.3457 )
 
 [node name="Sprite" type="Sprite" parent="."]

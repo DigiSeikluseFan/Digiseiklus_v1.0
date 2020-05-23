@@ -10,12 +10,13 @@ extents = Vector2( 115.969, 726.622 )
 position = Vector2( -2.26286, 0.850554 )
 collision_layer = 2
 script = ExtResource( 2 )
+level_scene = "res://objektid/Question_Box.tscn"
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -1.39726, -291.937 )
-scale = Vector2( 0.574991, 0.825446 )
+position = Vector2( 2.24507, -397.565 )
+scale = Vector2( 0.574991, 1.15032 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 19.3447, -655.586 )
+position = Vector2( -17.0789, -699.294 )
 shape = SubResource( 1 )
