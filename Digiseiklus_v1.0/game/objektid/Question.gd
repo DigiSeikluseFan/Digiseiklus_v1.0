@@ -35,6 +35,7 @@ func _ready():
 	elif TeleporterData.isCheckpointPassed and CheckpointRed5.isCheckpoint5:
 		questionList = TeleporterData.questionList5
 		randomList = questionList[randi() % questionList.size()+1]
+		TeleporterData.isCheckpoint5 = true
 	else:
 		print("Rohkem pole Checkpointi")
 		
@@ -65,7 +66,9 @@ func _on_Vastus1_pressed():
 		print(counter, rightAnswer)
 		TeleporterData.isCheckpointPassed = true
 	else:
-		print("Vale vastus")
+		if counter >= 1:
+			counter = 0
+		print(counter, "vale vastus")
 
 func _on_Vastus2_pressed():
 	if  rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").text:
@@ -73,7 +76,9 @@ func _on_Vastus2_pressed():
 		print(counter, rightAnswer)
 		TeleporterData.isCheckpointPassed = true
 	else:
-		print("Vale vastus")
+		if counter >= 1:
+			counter = 0
+		print(counter, "vale vastus")
 	
 
 func _on_Vastus3_pressed():
@@ -82,12 +87,17 @@ func _on_Vastus3_pressed():
 		print(counter," ", rightAnswer)
 		TeleporterData.isCheckpointPassed = true
 	else:
-		print("vale vastus")
+		if counter >= 1:
+			counter = 0
+		print(counter, "vale vastus")
 	
 
 func _on_VASTA_pressed():
-	if counter >= 1:
+	if counter >= 1 and !TeleporterData.isCheckpoint5:
 		get_tree().change_scene("res://objektid/Question_AnswerRight.tscn")
+	elif counter >=1 and TeleporterData.isCheckpoint5:
+		get_tree().change_scene("res://src/Tase_läbitud.tscn")
+		print("Chekpoint5 läbitud")
 	else:
 		get_tree().change_scene("res://objektid/Question_AnswerWrong.tscn")	
 

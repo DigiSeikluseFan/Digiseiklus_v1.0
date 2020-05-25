@@ -1,24 +1,42 @@
 extends Node2D
 
 #spawns player location to scene
-var player_location = Vector2(236.82,789.579)
+var player_location1 = Vector2(236.82,789.579)
+var player_location2 = Vector2(142.066, 699.882)
 var player_spawn = load("res://src/Actors/Player.tscn")
+var isCheckpoint5 = false
 var checkpoint = null
 var isCheckpointPassed = false
 var isRightAnswer = false
 var questionList
 
+var CP1_location = Vector2(3877.99,811.591)
+var CP2_location = Vector2(7402.33,700.833)
+var CP3_location = Vector2(11383.663,701.1)
+var CP4_location = Vector2(14619.867,810.552)
+
+
 func _ready():
 	set_process(true)
 	set_process_input(true)
 	player_spawn = player_spawn.instance()
-
-	TeleporterData.set("player_location", player_location)
+	
+	if get_node("res://src/Levels/Level1.tscn"):
+		TeleporterData.set("player_location", player_location1)
+		print("Level1_player location1")
+	else:
+		TeleporterData.set("player_location", player_location2)
+		
 	TeleporterData.set("player_spawn", player_spawn)
 	TeleporterData.set("isCHeckpointPassed", isCheckpointPassed)
+	TeleporterData.set("isCheckpoint5", isCheckpoint5)
 	TeleporterData.set("checkpoint", checkpoint)
+	TeleporterData.set("CP1_location", CP1_location)
+	TeleporterData.set("CP2_location", CP2_location)
+	TeleporterData.set("CP3_location", CP3_location)
+	TeleporterData.set("CP4_location", CP4_location)	
 	
-			
+		
 var questionList1 = { 
 	1:{
 		"label": "Mida peaksid oma arvutis olevate oluliste failidega tegema? ",

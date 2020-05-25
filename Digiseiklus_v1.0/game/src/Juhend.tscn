@@ -2,7 +2,7 @@
 
 [ext_resource path="res://objektid/Info.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/Esileht/Esileht_popup.png" type="Texture" id=2]
-[ext_resource path="res://assets/Background/Esileht/Nupp_kinni_lilla.png" type="Texture" id=3]
+[ext_resource path="res://assets/Background/Esileht/Esilhet_popup_nupp_sulge.png" type="Texture" id=3]
 [ext_resource path="res://assets/Background/Esileht/Esileht_nuppudeta.png" type="Texture" id=4]
 
 [node name="Juhend" type="Control"]
@@ -29,10 +29,10 @@ margin_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="Exit_toMain" type="TextureButton" parent="."]
-margin_left = 1525.92
-margin_top = 148.569
-margin_right = 1668.92
-margin_bottom = 284.569
+margin_left = 1558.66
+margin_top = 119.272
+margin_right = 1701.66
+margin_bottom = 255.272
 texture_normal = ExtResource( 3 )
 expand = true
 stretch_mode = 3

@@ -24,6 +24,7 @@ func get_direction() -> Vector2:
 		$AnimatedSprite.flip_h = true
 	elif Input.is_action_pressed("jump"): 
 		$AnimatedSprite.play("jump")
+		AudioEffects.get_node("Hüpe").play()
 	else:
 		$AnimatedSprite.play("idle")
 	if Input.is_action_pressed("ui_cancel"):

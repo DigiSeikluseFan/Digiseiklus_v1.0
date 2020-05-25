@@ -8,5 +8,5 @@ func _physics_process(_delta):
 	for body in bodies:
 		if body.name=="Player":
 			get_parent().queue_free()
-
+			AudioEffects.get_node("surm").play()
 	

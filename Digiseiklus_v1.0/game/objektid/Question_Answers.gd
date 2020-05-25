@@ -13,27 +13,27 @@ func _ready():
 func on_timeout():
 	if  CheckpointRed1.isCheckpoint1:
 		get_tree().change_scene("res://src/Levels/Level1.tscn")
-		TeleporterData.player_location = CheckpointRed1.teleport_location
+		TeleporterData.player_location1 = TeleporterData.CP1_location
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed2.isCheckpoint2:
 		print("Checkpoint2 läbitud")
 		get_tree().change_scene("res://src/Levels/Level1.tscn")
-		TeleporterData.player_location = CheckpointRed2.teleport_location
+		TeleporterData.player_location1 = TeleporterData.CP2_location
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed3.isCheckpoint3:
 		print("Checkpoint3 läbitud")
 		get_tree().change_scene("res://src/Levels/Level1.tscn")
-		TeleporterData.player_location = CheckpointRed3.teleport_location
+		TeleporterData.player_location1 = TeleporterData.CP3_location
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed4.isCheckpoint4:
 		print("Checkpoint4 läbitud")
 		get_tree().change_scene("res://src/Levels/Level1.tscn")
-		TeleporterData.player_location = CheckpointRed4.teleport_location
+		TeleporterData.player_location1 = TeleporterData.CP4_location
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed5.isCheckpoint5:
 		print("Checkpoint5 läbitud")
 		get_tree().change_scene("res://src/Levels/Level2.tscn")
-		TeleporterData.player_location = Vector2(232.412, 892.002)
+		TeleporterData.player_location1 = Vector2(142.066, 699.882)
 		TeleporterData.isCheckpointPassed = true
 		
 
