@@ -3,8 +3,13 @@ extends Control
 onready var soundON = get_node("SoundON2")
 onready var soundOFF = get_node("SoundOFF")
 func _ready():
+	var screen_size = OS.get_screen_size(OS.get_current_screen())
+	var window_size = OS.get_window_size()
+	var centered_pos = (screen_size - window_size) / 4
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	AudioEffects.get_node("Level1_taust").stop()
 	
+
 func _on_Exit_pressed():
 	get_tree().quit()
 
@@ -27,11 +32,12 @@ func _on_Exit_toMain_pressed():
 
 func _on_Tiim_pressed():
 	get_tree().change_scene("res://src/Tiimist.tscn")
+	
 
 
 func _on_Juhend_pressed():
 	get_tree().change_scene("res://src/Juhend.tscn")
-
+	
 
 func _on_Alusta_pressed():
 	get_tree().change_scene("res://src/Vaheleht1.tscn")

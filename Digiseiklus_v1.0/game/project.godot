@@ -38,13 +38,13 @@ CheckpointRed4="*res://objektid/Checkpoint_red4.tscn"
 CheckpointRed5="*res://objektid/Checkpoint_red5.tscn"
 CheckpointGreen4="*res://objektid/Checkpoint_green4.tscn"
 FadeInOut="*res://src/Fade_in_out.gd"
+AudioEffects="*res://Audio Effects.tscn"
 
 [display]
 
 window/size/width=1920
 window/size/height=1080
 window/stretch/mode="2d"
-window/stretch/aspect="expand"
 
 [input]
 
@@ -75,5 +75,7 @@ jump={
 
 [rendering]
 
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=1
 quality/2d/use_pixel_snap=true
 environment/default_environment="res://default_env.tres"

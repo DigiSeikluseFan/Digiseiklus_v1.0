@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/Background/küsimuste_popup_puhas.png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/taust_FINAL (1).png" type="Texture" id=3]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfont.tres" type="DynamicFont" id=4]
-[ext_resource path="res://assets/taustamuusika2.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/helid/taustamuusika2.wav" type="AudioStream" id=5]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfon_Title.tres" type="DynamicFont" id=6]
 
 [sub_resource type="ButtonGroup" id=1]
@@ -58,7 +58,7 @@ __meta__ = {
 
 [node name="AudioEffects" type="Node" parent="."]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AudioEffects"]
+[node name="Küsimuse_taust" type="AudioStreamPlayer2D" parent="AudioEffects"]
 stream = ExtResource( 5 )
 autoplay = true
 
