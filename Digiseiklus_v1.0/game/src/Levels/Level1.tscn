@@ -126,6 +126,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Taust_Clean_11" type="Sprite" parent="Taust"]
+position = Vector2( 20159, 541 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="mummudTaustal" type="Node2D" parent="."]
 
 [node name="mummud" parent="mummudTaustal" instance=ExtResource( 24 )]

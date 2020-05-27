@@ -7,7 +7,8 @@
 [ext_resource path="res://assets/Enemy/roheline/Mänguprojekt - roheline2.png" type="Texture" id=5]
 [ext_resource path="res://StompDetector.gd" type="Script" id=6]
 [ext_resource path="res://KillPlayer.gd" type="Script" id=8]
-[ext_resource path="res://Vastane_Punane.gd" type="Script" id=18]
+[ext_resource path="res://Vastane_Sinine.gd" type="Script" id=18]
+
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
