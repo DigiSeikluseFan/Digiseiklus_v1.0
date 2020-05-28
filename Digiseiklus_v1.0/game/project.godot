@@ -25,6 +25,10 @@ config/description="Digiseiklus + küsimused + 2 vastast + animated cd/vent"
 run/main_scene="res://src/UserInterface.tscn"
 config/icon="res://icon.png"
 
+[audio]
+
+default_bus_layout=""
+
 [autoload]
 
 TeleporterData="*res://src/Levels/teleporter_data.gd"
@@ -39,6 +43,11 @@ CheckpointRed5="*res://objektid/Checkpoint_red5.tscn"
 CheckpointGreen4="*res://objektid/Checkpoint_green4.tscn"
 FadeInOut="*res://src/Fade_in_out.gd"
 AudioEffects="*res://Audio Effects.tscn"
+CheckpointRed21="*res://objektid/Checkpoint_red2_1.tscn"
+CheckpointRed22="*res://objektid/Checkpoint_red2_2.tscn"
+CheckpointRed23="*res://objektid/Checkpoint_red2_3.tscn"
+CheckpointRed24="*res://objektid/Checkpoint_red2_4.tscn"
+CheckpointRed25="*res://objektid/Checkpoint_red2_5.tscn"
 
 [display]
 

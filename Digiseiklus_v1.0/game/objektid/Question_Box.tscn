@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://objektid/Question.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/küsimuste_popup_puhas.png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/taust_FINAL (1).png" type="Texture" id=3]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfont.tres" type="DynamicFont" id=4]
-[ext_resource path="res://assets/helid/taustamuusika2.wav" type="AudioStream" id=5]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfon_Title.tres" type="DynamicFont" id=6]
 
 [sub_resource type="ButtonGroup" id=1]
@@ -55,12 +54,6 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="AudioEffects" type="Node" parent="."]
-
-[node name="Küsimuse_taust" type="AudioStreamPlayer2D" parent="AudioEffects"]
-stream = ExtResource( 5 )
-autoplay = true
 
 [node name="VASTA" type="Button" parent="."]
 modulate = Color( 0.996078, 0.968627, 0.968627, 1 )

@@ -1,16 +1,13 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Levels/Level2.gd" type="Script" id=2]
-[ext_resource path="res://objektid/Checkpoint_red1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/Background/taust_elementidega.png" type="Texture" id=4]
+[ext_resource path="res://PauseScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Background/Level2/Level_2_taust.png" type="Texture" id=4]
 [ext_resource path="res://src/Levels/Fall_Checkpoint_1.gd" type="Script" id=5]
 [ext_resource path="res://objektid/Must_pind.tscn" type="PackedScene" id=6]
 [ext_resource path="res://objektid/vent.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/Background/taust_elementideta_2CLEAN.png" type="Texture" id=8]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=9]
-[ext_resource path="res://objektid/Checkpoint_red3.tscn" type="PackedScene" id=10]
-[ext_resource path="res://objektid/Checkpoint_red2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://objektid/Checkpoint_green1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://objektid/Checkpoint_green2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://objektid/Checkpoint_green3.tscn" type="PackedScene" id=14]
@@ -21,17 +18,12 @@
 [ext_resource path="res://Vastane_Roheline.tscn" type="PackedScene" id=19]
 [ext_resource path="res://objektid/animVent.tscn" type="PackedScene" id=20]
 [ext_resource path="res://objektid/Checkpoint_green4.tscn" type="PackedScene" id=21]
-[ext_resource path="res://objektid/Checkpoint_red4.tscn" type="PackedScene" id=22]
-[ext_resource path="res://objektid/Checkpoint_red5.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/Background/Level2/level2_07.png" type="Texture" id=24]
-[ext_resource path="res://assets/Background/Level2/level2_01.png" type="Texture" id=25]
-[ext_resource path="res://assets/Background/Level2/level2_02.png" type="Texture" id=26]
-[ext_resource path="res://assets/Background/Level2/level2_03.png" type="Texture" id=27]
-[ext_resource path="res://assets/Background/Level2/level2_04.png" type="Texture" id=28]
-[ext_resource path="res://assets/Background/Level2/level2_06.png" type="Texture" id=29]
-[ext_resource path="res://assets/Background/Level2/level2_05.png" type="Texture" id=30]
 [ext_resource path="res://objektid/FloppyDisc.tscn" type="PackedScene" id=31]
-[ext_resource path="res://assets/Background/Level2/level2_08.png" type="Texture" id=32]
+[ext_resource path="res://objektid/Checkpoint_red2_3.tscn" type="PackedScene" id=33]
+[ext_resource path="res://objektid/Checkpoint_red2_1.tscn" type="PackedScene" id=34]
+[ext_resource path="res://objektid/Checkpoint_red2_4.tscn" type="PackedScene" id=35]
+[ext_resource path="res://objektid/Checkpoint_red2_2.tscn" type="PackedScene" id=36]
+[ext_resource path="res://objektid/Checkpoint_red2_5.tscn" type="PackedScene" id=37]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7898.89, 6.36108 )
@@ -40,6 +32,21 @@ extents = Vector2( 7898.89, 6.36108 )
 resource_name = "fade_out"
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "fadein"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -74,7 +81,7 @@ __meta__ = {
 
 [node name="Taust_Clean_2" type="Sprite" parent="Taust"]
 position = Vector2( 2879, 541 )
-texture = ExtResource( 8 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -88,7 +95,7 @@ __meta__ = {
 
 [node name="Taust_Clean_4" type="Sprite" parent="Taust"]
 position = Vector2( 6719, 541 )
-texture = ExtResource( 8 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -102,7 +109,7 @@ __meta__ = {
 
 [node name="Taust_Clean_6" type="Sprite" parent="Taust"]
 position = Vector2( 10559, 541 )
-texture = ExtResource( 8 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -116,7 +123,7 @@ __meta__ = {
 
 [node name="Taust_Clean_8" type="Sprite" parent="Taust"]
 position = Vector2( 14399, 541 )
-texture = ExtResource( 8 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -130,7 +137,7 @@ __meta__ = {
 
 [node name="Taust_Clean_10" type="Sprite" parent="Taust"]
 position = Vector2( 18239, 541 )
-texture = ExtResource( 8 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -141,54 +148,6 @@ texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="level2_01" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( -1464.47, -1170.98 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 25 )
-
-[node name="level2_02" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 1787.72, -1206.97 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 26 )
-
-[node name="level2_03" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 3289.23, -1781.21 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 27 )
-
-[node name="level2_04" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 6328.84, -2592.92 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 28 )
-
-[node name="level2_05" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 7070.25, -2573.2 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 30 )
-
-[node name="level2_06" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 9218.48, -1972.6 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 29 )
-
-[node name="level2_07" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 11461.4, -880.235 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 24 )
-
-[node name="level2_08" type="Sprite" parent="Taust"]
-visible = false
-position = Vector2( 14642.3, -808.059 )
-scale = Vector2( 0.394156, 0.309811 )
-texture = ExtResource( 32 )
 
 [node name="Pind" type="Node2D" parent="."]
 position = Vector2( 3697, 688 )
@@ -366,15 +325,24 @@ __meta__ = {
 [node name="Vent_6" parent="Suur_Vent" instance=ExtResource( 7 )]
 position = Vector2( 16396.6, -2.37573 )
 
-[node name="Vent_8" parent="Suur_Vent" instance=ExtResource( 7 )]
-position = Vector2( 24482.9, -2.27222 )
-
 [node name="Vaike_Vent" type="Node2D" parent="."]
 position = Vector2( 683, 651 )
 scale = Vector2( 0.045, 0.045 )
 
 [node name="Vaike_Vent_1" parent="Vaike_Vent" instance=ExtResource( 17 )]
-position = Vector2( -11711.1, 2600 )
+position = Vector2( -16403.8, 2636.1 )
+scale = Vector2( 9.30545, 9.35391 )
+
+[node name="Vaike_Vent_11" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( -13895, 2654.15 )
+scale = Vector2( 9.30545, 9.35391 )
+
+[node name="Vaike_Vent_6" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( -16439.9, 199.49 )
+scale = Vector2( 9.30545, 9.35391 )
+
+[node name="Vaike_Vent_8" parent="Vaike_Vent" instance=ExtResource( 17 )]
+position = Vector2( -16439.9, -2255.17 )
 scale = Vector2( 9.30545, 9.35391 )
 
 [node name="Vaike_Vent_2" parent="Vaike_Vent" instance=ExtResource( 17 )]
@@ -537,7 +505,7 @@ position = Vector2( 23346.7, 2422.23 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline14" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 32168.9, 5088.89 )
+position = Vector2( 11246.4, 6661.49 )
 scale = Vector2( 1, 1 )
 
 [node name="Vastane_Roheline15" parent="Vastased_Roheline" instance=ExtResource( 19 )]
@@ -575,45 +543,51 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Checkpoint_red1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3731.88, 703.09 )
+[node name="Checkpoint_red2_1" parent="." instance=ExtResource( 34 )]
+position = Vector2( 3724.02, 705.952 )
 
 [node name="Checkpoint_green1" parent="." instance=ExtResource( 12 )]
 visible = false
 position = Vector2( 3742.43, 763.21 )
 
-[node name="Checkpoint_red2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 7617.96, 808.729 )
+[node name="Checkpoint_red2_2" parent="." instance=ExtResource( 36 )]
+position = Vector2( 7601.43, 807.002 )
 
 [node name="Checkpoint_green2" parent="." instance=ExtResource( 13 )]
 visible = false
-position = Vector2( 7271.04, 755.95 )
+position = Vector2( 7608.48, 745.927 )
 
-[node name="Checkpoint_red3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 11448.3, 787.569 )
+[node name="Checkpoint_red2_3" parent="." instance=ExtResource( 33 )]
+position = Vector2( 11457, 792.667 )
 
 [node name="Checkpoint_green3" parent="." instance=ExtResource( 14 )]
 visible = false
-position = Vector2( 11169.7, 648.249 )
+position = Vector2( 11448.7, 653.26 )
 
-[node name="Checkpoint_red4" parent="." instance=ExtResource( 22 )]
-position = Vector2( 15302.6, 843.323 )
+[node name="Checkpoint_red2_4" parent="." instance=ExtResource( 35 )]
+position = Vector2( 15302.4, 846.103 )
 
-[node name="Checkpoint_green" parent="." instance=ExtResource( 21 )]
+[node name="Checkpoint_green4" parent="." instance=ExtResource( 21 )]
 visible = false
-position = Vector2( 14328, 803.48 )
+position = Vector2( 15298.5, 918.743 )
 
-[node name="Checkpoint_red5" parent="." instance=ExtResource( 23 )]
-position = Vector2( 19006.9, 811.56 )
+[node name="Checkpoint_red2_5" parent="." instance=ExtResource( 37 )]
+position = Vector2( 19005.3, 798.115 )
 
-[node name="CP1" type="Position2D" parent="."]
-position = Vector2( 3877.99, 811.591 )
+[node name="CP2_1" type="Position2D" parent="."]
+position = Vector2( 3921.51, 768.805 )
 
-[node name="CP2" type="Position2D" parent="."]
-position = Vector2( 7402.33, 700.833 )
+[node name="CP2_2" type="Position2D" parent="."]
+position = Vector2( 7768.89, 815.583 )
 
-[node name="CP3" type="Position2D" parent="."]
-position = Vector2( 11404.9, 643.923 )
+[node name="CP2_3" type="Position2D" parent="."]
+position = Vector2( 11639.2, 816.048 )
+
+[node name="CP2_4" type="Position2D" parent="."]
+position = Vector2( 15515, 708.719 )
+
+[node name="CP2_5" type="Position2D" parent="."]
+position = Vector2( 19157.1, 817.314 )
 
 [node name="anim CD" type="Node2D" parent="."]
 position = Vector2( 9180.25, 860.186 )
@@ -641,9 +615,6 @@ position = Vector2( 3807.37, -45.8711 )
 [node name="CD4" parent="anim CD" instance=ExtResource( 16 )]
 position = Vector2( 5760.35, -12.0605 )
 
-[node name="CD5" parent="anim CD" instance=ExtResource( 16 )]
-position = Vector2( 7650.75, -82.186 )
-
 [node name="CD10" parent="anim CD" instance=ExtResource( 16 )]
 position = Vector2( 9527.75, -12.186 )
 
@@ -651,6 +622,14 @@ position = Vector2( 9527.75, -12.186 )
 
 [node name="FloppyDisc1" parent="FloppyDisc" instance=ExtResource( 31 )]
 position = Vector2( 9484.77, 758.661 )
+scale = Vector2( 0.2145, 0.21505 )
+
+[node name="FloppyDisc2" parent="FloppyDisc" instance=ExtResource( 31 )]
+position = Vector2( 11979.9, 760.285 )
+scale = Vector2( 0.2145, 0.21505 )
+
+[node name="FloppyDisc3" parent="FloppyDisc" instance=ExtResource( 31 )]
+position = Vector2( 16140, 691.676 )
 scale = Vector2( 0.2145, 0.21505 )
 
 [node name="Audio Effects" type="Node" parent="."]
@@ -675,4 +654,22 @@ autoplay = "fade_out"
 anims/fade_out = SubResource( 2 )
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 142.066, 699.882 )
+position = Vector2( 34.4212, 665.511 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseScene" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+margin_right = 1920.0
+margin_bottom = 1081.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect2"]
+autoplay = "fadein"
+anims/fadein = SubResource( 3 )

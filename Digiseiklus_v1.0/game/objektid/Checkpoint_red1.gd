@@ -9,13 +9,3 @@ func _on_Checkpoint_red1_body_entered(body):
 	if body.get_name() == "Player":
 		get_tree().change_scene("res://objektid/Question_Box.tscn")
 		print("Checkpoint_red1")
-
-#func _physics_process(delta):
-#	var bodies = get_overlapping_bodies()
-#	for body in bodies:
-#		if 	TeleporterData.player_spawn:
-#			get_tree().change_scene(level_scene)
-#
-
-
-# Replace with function body.

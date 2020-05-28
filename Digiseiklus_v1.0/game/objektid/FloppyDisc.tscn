@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://assets/objektid/FloppyDisc/disc_element4.png" type="Texture" id=1]
 [ext_resource path="res://assets/objektid/FloppyDisc/disc_element5.png" type="Texture" id=2]
@@ -30,20 +30,21 @@
 [ext_resource path="res://assets/objektid/FloppyDisc/disc_element29.png" type="Texture" id=28]
 [ext_resource path="res://assets/objektid/FloppyDisc/disc_element27.png" type="Texture" id=29]
 [ext_resource path="res://assets/objektid/FloppyDisc/disc_element20.png" type="Texture" id=30]
+[ext_resource path="res://KillPlayer.gd" type="Script" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 19 ), ExtResource( 11 ), ExtResource( 26 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 13 ), ExtResource( 22 ), ExtResource( 10 ), ExtResource( 27 ), ExtResource( 30 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 23 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 16 ), ExtResource( 28 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 109.669, 485.071 )
+extents = Vector2( 91.8822, 384.208 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 111.362, 384.208 )
+extents = Vector2( 109.669, 485.071 )
 
 [sub_resource type="SegmentShape2D" id=4]
 a = Vector2( -39.4594, -13.0135 )
@@ -56,25 +57,29 @@ b = Vector2( -18.7989, 6.63097 )
 [node name="Sprite" type="AnimatedSprite" parent="StaticBody2D"]
 position = Vector2( 6, 0 )
 frames = SubResource( 1 )
-frame = 27
+frame = 19
+speed_scale = 2.0
 playing = true
 __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Area2D" type="Area2D" parent="StaticBody2D/Sprite"]
+script = ExtResource( 31 )
+
+[node name="CollisionShape2D vaska2" type="CollisionShape2D" parent="StaticBody2D/Sprite/Area2D"]
+position = Vector2( -0.856452, -447.05 )
+rotation = -1.5708
+scale = Vector2( 0.984, 0.725 )
+shape = SubResource( 2 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -385.665, -187.289 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape2D vaska" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 405.193, -86.3737 )
-shape = SubResource( 3 )
-
-[node name="CollisionShape2D vaska2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 8.73272, -247.255 )
-rotation = -1.5708
-scale = Vector2( 0.984, 0.725 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 696.077, -537.727 )

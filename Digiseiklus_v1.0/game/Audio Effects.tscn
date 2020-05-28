@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/helid/surm1.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/helid/taustamuusika2.wav" type="AudioStream" id=2]
 [ext_resource path="res://assets/helid/Vigastus.wav" type="AudioStream" id=3]
 [ext_resource path="res://assets/helid/Hüpe.wav" type="AudioStream" id=4]
-[ext_resource path="res://assets/helid/all2.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/helid/all1.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/helid/levelil2bimine.wav" type="AudioStream" id=6]
 
 [node name="Audio Effects" type="Node"]
 
@@ -29,6 +30,7 @@ volume_db = 15.935
 [node name="chippy_vigastus" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 
-[node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="."]
+[node name="Taseläbi" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 
 [node name="AudioStreamPlayer2D7" type="AudioStreamPlayer2D" parent="."]

@@ -8,7 +8,7 @@ export (String) var answer3
 export (Array)  var answers
 
 
-var questionList = TeleporterData.questionList1
+var questionList = {}
 var randomList
 
 
@@ -16,9 +16,12 @@ onready var button_right = get_node("VASTA")
 
 var rightAnswer 
 func _ready():
+	AudioEffects.get_node("küsimuse_taust").play()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	randomize()
 	if CheckpointRed1.isCheckpoint1:
+		print(CheckpointRed1.isCheckpoint1, "checkpoint 1 küsimused")
+		questionList = TeleporterData.questionList1
 		randomList = questionList[randi() % questionList.size()+1]	
 	elif TeleporterData.isCheckpointPassed and CheckpointRed2.isCheckpoint2:
 		questionList = TeleporterData.questionList2
@@ -36,6 +39,22 @@ func _ready():
 		questionList = TeleporterData.questionList5
 		randomList = questionList[randi() % questionList.size()+1]
 		TeleporterData.isCheckpoint5 = true
+	elif CheckpointRed21.isCheckpoint2_1:
+		questionList = TeleporterData.questionList6
+		print(questionList)
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed22.isCheckpoint2_2:
+		questionList = TeleporterData.questionList7
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed23.isCheckpoint2_3:
+		questionList = TeleporterData.questionList8
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed24.isCheckpoint2_4:
+		questionList = TeleporterData.questionList9
+		randomList = questionList[randi() % questionList.size()+1]
+	elif TeleporterData.isCheckpointPassed and CheckpointRed25.isCheckpoint2_5:
+		questionList = TeleporterData.questionList10
+		randomList = questionList[randi() % questionList.size()+1]
 	else:
 		print("Rohkem pole Checkpointi")
 		
@@ -52,7 +71,7 @@ func _ready():
 				rightAnswer = ans
 				answersL.insert(0, ans)
 					
-
+	print(answersL)
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus1").set_text(answersL[0]) 
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").set_text(answersL[1])    
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").set_text(answersL[2])
