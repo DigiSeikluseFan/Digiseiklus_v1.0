@@ -8,6 +8,7 @@ func _ready():
 	var centered_pos = (screen_size - window_size) / 4
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	AudioEffects.get_node("Level1_taust").stop()
+	AudioEffects.get_node("küsimuse_taust").play()
 	
 
 func _on_Exit_pressed():
@@ -26,10 +27,6 @@ func _on_Sound_pressed():
 		soundOFF.visible = false
 		print("sound on")
 
-func _on_Exit_toMain_pressed():
-	get_tree().change_scene("res://src/UserInterface.tscn")
-
-
 func _on_Tiim_pressed():
 	get_tree().change_scene("res://src/Tiimist.tscn")
 	
@@ -41,3 +38,7 @@ func _on_Juhend_pressed():
 
 func _on_Alusta_pressed():
 	get_tree().change_scene("res://src/Vaheleht1.tscn")
+
+
+func _on_Exit_toMain_pressed():
+	get_tree().change_scene("res://src/UserInterface.tscn")

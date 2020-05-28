@@ -12,7 +12,7 @@ func _ready():
 	
 	var audioPlayer = AudioStreamPlayer.new()
 	self.add_child(audioPlayer)
-	audioPlayer.stream = load("res://assets/helid/taust3.wav")
+	audioPlayer.stream = load("res://assets/helid/taustamuusika4.1.wav")
 	audioPlayer.play()
 	
 	var location = TeleporterData.player_location1

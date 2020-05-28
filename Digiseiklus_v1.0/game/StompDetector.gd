@@ -7,6 +7,7 @@ func _physics_process(_delta):
 	var bodies= get_overlapping_bodies()
 	for body in bodies:
 		if body.name=="Player":
-			get_parent().queue_free()
 			AudioEffects.get_node("surm").play()
+			get_parent().queue_free()
+			
 	

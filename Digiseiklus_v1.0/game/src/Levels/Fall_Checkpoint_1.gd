@@ -4,4 +4,5 @@ func _physics_process(_delta):
 	for body in bodies:
 		if body.name=="Player":			
 			body.set_position(TeleporterData.player_location1)
+			AudioEffects.get_node("allakukkumine").play()
 				

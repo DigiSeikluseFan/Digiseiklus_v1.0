@@ -8,7 +8,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	timer = Timer.new()
 	timer.set_one_shot(true)
-	timer.set_wait_time(2)
+	timer.set_wait_time(1.7)
 	timer.connect("timeout", self, "on_timeout")
 	add_child(timer)
 	timer.start()

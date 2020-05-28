@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://objektid/Info.tscn" type="PackedScene" id=1]
 [ext_resource path="res://objektid/Alusta.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Background/Esileht/Esileht_nuppudeta.png" type="Texture" id=3]
 [ext_resource path="res://assets/Background/Esileht/Nupp_1.png" type="Texture" id=4]
-[ext_resource path="res://assets/helid/taustamuusika2.wav" type="AudioStream" id=5]
 [ext_resource path="res://objektid/Info.gd" type="Script" id=6]
 [ext_resource path="res://assets/Background/Esileht/Nupp_kinni_hover.png" type="Texture" id=7]
 [ext_resource path="res://assets/Background/Esileht/Nupp_kinni_lilla.png" type="Texture" id=8]
@@ -45,26 +44,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GridContainer" type="GridContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -474.0
-margin_top = 84.0424
-margin_right = 474.0
-margin_bottom = 320.042
-columns = 3
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Juhend" type="TextureButton" parent="GridContainer"]
-margin_right = 313.0
-margin_bottom = 235.0
+[node name="Juhend" type="TextureButton" parent="."]
+margin_left = 541.788
+margin_top = 497.855
+margin_right = 819.788
+margin_bottom = 791.855
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_horizontal = 2
 size_flags_stretch_ratio = 0.0
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 9 )
@@ -74,24 +60,28 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Alusta" parent="GridContainer" instance=ExtResource( 2 )]
-margin_left = 317.0
-margin_right = 630.0
-margin_bottom = 235.0
+[node name="Alusta" parent="." instance=ExtResource( 2 )]
+margin_left = 928.873
+margin_top = 681.002
+margin_right = 928.873
+margin_bottom = 681.002
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 2
+size_flags_vertical = 1
 size_flags_stretch_ratio = 0.0
 texture_hover = ExtResource( 12 )
 expand = true
 stretch_mode = 3
 script = null
 
-[node name="Tiim" parent="GridContainer" instance=ExtResource( 1 )]
-margin_left = 634.0
-margin_right = 947.0
-margin_bottom = 235.0
+[node name="Tiim" parent="." instance=ExtResource( 1 )]
+margin_left = 1037.73
+margin_top = 494.276
+margin_right = 1289.73
+margin_bottom = 793.276
 mouse_default_cursor_shape = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 2
+size_flags_vertical = 1
 size_flags_stretch_ratio = 0.0
 texture_hover = ExtResource( 14 )
 expand = true
@@ -159,13 +149,9 @@ stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-autoplay = true
-[connection signal="pressed" from="GridContainer/Juhend" to="." method="_on_Juhend_pressed"]
-[connection signal="pressed" from="GridContainer/Alusta" to="." method="_on_Alusta_pressed"]
-[connection signal="pressed" from="GridContainer/Tiim" to="." method="_on_Tiim_pressed"]
+[connection signal="pressed" from="Juhend" to="." method="_on_Juhend_pressed"]
+[connection signal="pressed" from="Alusta" to="." method="_on_Alusta_pressed"]
+[connection signal="pressed" from="Tiim" to="." method="_on_Tiim_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
 [connection signal="pressed" from="SoundON2" to="." method="_on_Sound_pressed"]
 [connection signal="pressed" from="SoundOFF" to="." method="_on_Sound_pressed"]

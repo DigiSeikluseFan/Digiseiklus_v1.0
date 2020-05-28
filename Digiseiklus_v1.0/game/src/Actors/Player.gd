@@ -24,11 +24,13 @@ func get_direction() -> Vector2:
 		$AnimatedSprite.flip_h = true
 	elif Input.is_action_pressed("jump"): 
 		$AnimatedSprite.play("jump")
-		AudioEffects.get_node("Hüpe").play()
+		var audioPlayer = AudioStreamPlayer2D.new()
+		self.add_child(audioPlayer)
+		audioPlayer.stream = load("res://assets/helid/Hüpe.wav")
+		audioPlayer.play()
+		
 	else:
 		$AnimatedSprite.play("idle")
-	if Input.is_action_pressed("ui_cancel"):
-		get_tree().change_scene("res://src/UserInterface.tscn")
 	return Vector2(
 		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
 		-Input.get_action_strength("jump") if is_on_floor() and Input.is_action_just_pressed("jump") else 0.0
