@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/6ige vastus.wav-9deb024b2e29ac77f9ad4e41c3d54990.sample"
+
+[deps]
+
+source_file="res://assets/helid/6ige vastus.wav"
+dest_files=[ "res://.import/6ige vastus.wav-9deb024b2e29ac77f9ad4e41c3d54990.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -7,7 +7,6 @@ func _ready():
 	var window_size = OS.get_window_size()
 	var centered_pos = (screen_size - window_size) / 4
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	AudioEffects.get_node("Level1_taust").stop()
 	AudioEffects.get_node("küsimuse_taust").play()
 	
 
@@ -41,4 +40,4 @@ func _on_Alusta_pressed():
 
 
 func _on_Exit_toMain_pressed():
-	get_tree().change_scene("res://src/UserInterface.tscn")
+	get_tree().change_scene("res://src/Vaheleht1.tscn")

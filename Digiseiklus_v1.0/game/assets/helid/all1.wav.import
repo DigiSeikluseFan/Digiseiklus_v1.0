@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/all1.wav-42191f2cb813baeadcf4601dfee51827.sample"
+
+[deps]
+
+source_file="res://assets/helid/all1.wav"
+dest_files=[ "res://.import/all1.wav-42191f2cb813baeadcf4601dfee51827.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
