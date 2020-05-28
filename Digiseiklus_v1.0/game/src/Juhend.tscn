@@ -29,9 +29,9 @@ margin_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="Exit_toMain" type="TextureButton" parent="."]
-margin_left = 1489.13
+margin_left = 1541.73
 margin_top = 126.055
-margin_right = 1632.13
+margin_right = 1684.73
 margin_bottom = 262.055
 texture_normal = ExtResource( 3 )
 expand = true

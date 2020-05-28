@@ -1,0 +1,106 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://assets/Enemy/lilla/walk/w2.png" type="Texture" id=1]
+[ext_resource path="res://assets/Enemy/lilla/walk/w3e.png" type="Texture" id=2]
+[ext_resource path="res://assets/Enemy/lilla/walk/w4e.png" type="Texture" id=3]
+[ext_resource path="res://assets/Enemy/lilla/walk/w1.png" type="Texture" id=4]
+[ext_resource path="res://assets/Enemy/lilla/walk/w5e.png" type="Texture" id=5]
+[ext_resource path="res://StompDetector.gd" type="Script" id=6]
+[ext_resource path="res://assets/Enemy/lilla/walk/w6.png" type="Texture" id=7]
+[ext_resource path="res://KillPlayer.gd" type="Script" id=8]
+[ext_resource path="res://assets/Enemy/lilla/walk/w7.png" type="Texture" id=9]
+[ext_resource path="res://assets/Enemy/lilla/dead/d11.png" type="Texture" id=10]
+[ext_resource path="res://assets/Enemy/lilla/dead/d13.png" type="Texture" id=11]
+[ext_resource path="res://assets/Enemy/lilla/dead/d4.png" type="Texture" id=12]
+[ext_resource path="res://assets/Enemy/lilla/dead/d7.png" type="Texture" id=13]
+[ext_resource path="res://assets/Enemy/lilla/dead/d14.png" type="Texture" id=14]
+[ext_resource path="res://assets/Enemy/lilla/dead/d5.png" type="Texture" id=15]
+[ext_resource path="res://assets/Enemy/lilla/dead/d10.png" type="Texture" id=16]
+[ext_resource path="res://assets/Enemy/lilla/dead/d9.png" type="Texture" id=17]
+[ext_resource path="res://Vastane_Sinine.gd" type="Script" id=18]
+[ext_resource path="res://assets/Enemy/lilla/dead/d6.png" type="Texture" id=19]
+[ext_resource path="res://assets/Enemy/lilla/dead/d12.png" type="Texture" id=20]
+[ext_resource path="res://assets/Enemy/lilla/dead/d2.png" type="Texture" id=21]
+[ext_resource path="res://assets/Enemy/lilla/dead/d8.png" type="Texture" id=22]
+[ext_resource path="res://assets/Enemy/lilla/dead/d16.png" type="Texture" id=23]
+[ext_resource path="res://assets/Enemy/lilla/dead/d15.png" type="Texture" id=24]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "walk",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 13 ), ExtResource( 22 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 10 ), ExtResource( 20 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 24 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 465.248, 698.813 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 464.166, 66.6667 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 10, 686.923 )
+
+[node name="Vastane_Lilla" type="KinematicBody2D"]
+scale = Vector2( 0.045, 0.045 )
+script = ExtResource( 18 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -22.2222, 155.556 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 640, 0 )
+enabled = true
+cast_to = Vector2( 0, 1000 )
+
+[node name="StompDetector" type="Area2D" parent="."]
+monitorable = false
+collision_layer = 0
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StompDetector"]
+modulate = Color( 0.0352941, 0.219608, 0.956863, 1 )
+position = Vector2( -17.2015, -624.361 )
+shape = SubResource( 3 )
+
+[node name="KillPlayer" type="Area2D" parent="."]
+position = Vector2( -502.722, 38.383 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="KillPlayer"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillPlayer"]
+position = Vector2( -16.4375, 133.16 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="KillPlayer2" type="Area2D" parent="."]
+position = Vector2( 483.326, 173.758 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="KillPlayer2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillPlayer2"]
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}

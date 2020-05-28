@@ -7,15 +7,15 @@
 [ext_resource path="res://src/Levels/Fall_Checkpoint_1.gd" type="Script" id=5]
 [ext_resource path="res://objektid/Must_pind.tscn" type="PackedScene" id=6]
 [ext_resource path="res://objektid/vent.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Vastane_Sinine.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Vastane_Lilla.tscn" type="PackedScene" id=10]
 [ext_resource path="res://objektid/Checkpoint_green1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://objektid/Checkpoint_green2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://objektid/Checkpoint_green3.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/helid/taust3.wav" type="AudioStream" id=15]
 [ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=16]
 [ext_resource path="res://objektid/Vaike_vent.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Vastane_Punane.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Vastane_Roheline.tscn" type="PackedScene" id=19]
 [ext_resource path="res://objektid/animVent.tscn" type="PackedScene" id=20]
 [ext_resource path="res://objektid/Checkpoint_green4.tscn" type="PackedScene" id=21]
 [ext_resource path="res://objektid/FloppyDisc.tscn" type="PackedScene" id=31]
@@ -63,7 +63,7 @@ position = Vector2( 1, -1 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_horizontal_guides_": [ 822.0, 452.0 ],
-"_edit_vertical_guides_": [ 4549.09 ]
+"_edit_vertical_guides_": [ 4549.09, 2576.0, 2727.0 ]
 }
 player = ExtResource( 9 )
 
@@ -228,10 +228,7 @@ position = Vector2( 1292.31, -102.302 )
 position = Vector2( 4376.92, 40.9207 )
 
 [node name="ram5" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 5505.44, -299.653 )
-
-[node name="ram6" parent="Ram" instance=ExtResource( 1 )]
-position = Vector2( 6664.83, -83.3039 )
+position = Vector2( 5597.44, -214.834 )
 
 [node name="ram7" parent="Ram" instance=ExtResource( 1 )]
 position = Vector2( 9279.63, -3.48959 )
@@ -389,141 +386,6 @@ scale = Vector2( 9.30544, 9.35391 )
 position = Vector2( 385245, 2600 )
 scale = Vector2( 9.30544, 9.35391 )
 
-[node name="Vastased_Punane" type="Node2D" parent="."]
-position = Vector2( 683, 651 )
-scale = Vector2( 0.045, 0.045 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Vastane_Punane1" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( -8088.89, -2066.67 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane2" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 5088.89, 2088.89 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane3" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 14133.3, -888.891 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane4" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 28644.4, 2888.89 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane5" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 40214.1, 419.485 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane6" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 60929.6, -851.26 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane7" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 100619, -416.133 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane8" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 86783.8, 2859.6 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane9" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 78102.4, 2.51953 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane10" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 89267.1, -3127.99 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane11" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 110369, 2836.02 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane12" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 114641, 2802.66 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastased_Roheline" type="Node2D" parent="."]
-position = Vector2( 14681.4, 486 )
-scale = Vector2( 0.045, 0.045 )
-
-[node name="Vastane_Roheline1" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -10612.4, 2355.72 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline2" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -18048.8, 4569.09 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline3" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -40733.1, 3288.14 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline4" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -55427.6, -163.573 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline5" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -90053.3, 591.774 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline6" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -110853, 5026.88 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline_CP juures" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -99442, 2692.98 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline7" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -125119, 2353.29 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline8" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -143627, 5080.08 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline9" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -179051, 6538.45 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline10" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -173928, 3507.97 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline11" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -184108, 4096.95 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline12" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -3544, 4573.6 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline13" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 23346.7, 2422.23 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline14" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 11246.4, 6661.49 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline15" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 43257.8, 2622.22 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline16" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 63257.9, 4333.34 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline17" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 81902.3, 2355.55 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline18" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 72657.9, 4155.55 )
-scale = Vector2( 1, 1 )
-
 [node name="Fall_Checkpoint_1" type="Area2D" parent="."]
 position = Vector2( 9579, 1088 )
 scale = Vector2( 1.266, 1 )
@@ -544,7 +406,7 @@ __meta__ = {
 }
 
 [node name="Checkpoint_red2_1" parent="." instance=ExtResource( 34 )]
-position = Vector2( 3724.02, 705.952 )
+position = Vector2( 3776, 707 )
 
 [node name="Checkpoint_green1" parent="." instance=ExtResource( 12 )]
 visible = false
@@ -596,10 +458,13 @@ position = Vector2( 9180.25, 860.186 )
 position = Vector2( -7717.25, -50.186 )
 
 [node name="CD2" parent="anim CD" instance=ExtResource( 16 )]
-position = Vector2( -6534.09, -29.8386 )
+position = Vector2( -6528.25, -35.1859 )
+
+[node name="CD5" parent="anim CD" instance=ExtResource( 16 )]
+position = Vector2( -6033.25, -22.1859 )
 
 [node name="CD3" parent="anim CD" instance=ExtResource( 16 )]
-position = Vector2( -6112.86, -13.91 )
+position = Vector2( 7642.75, -117.186 )
 
 [node name="CD6" parent="anim CD" instance=ExtResource( 16 )]
 position = Vector2( -3831.04, -7.08295 )
@@ -641,7 +506,6 @@ volume_db = -20.129
 autoplay = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 margin_right = 1941.0
 margin_bottom = 1089.0
 color = Color( 0, 0, 0, 1 )
@@ -662,7 +526,6 @@ position = Vector2( 34.4212, 665.511 )
 visible = false
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-visible = false
 margin_right = 1920.0
 margin_bottom = 1081.0
 color = Color( 0, 0, 0, 1 )
@@ -673,3 +536,94 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect2"]
 autoplay = "fadein"
 anims/fadein = SubResource( 3 )
+
+[node name="Vastane_Sinine" type="Node2D" parent="."]
+
+[node name="Vastane_Sinine" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 310, 557 )
+
+[node name="Vastane_Sinine2" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 1970, 779 )
+
+[node name="Vastane_Sinine3" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 2767, 568 )
+
+[node name="Vastane_Sinine4" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 4617, 782 )
+
+[node name="Vastane_Sinine5" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 5168, 630 )
+
+[node name="Vastane_Sinine6" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 5842, 781 )
+
+[node name="Vastane_Sinine7" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 7058, 642 )
+
+[node name="Vastane_Sinine8" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 8240, 714 )
+
+[node name="Vastane_Sinine9" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 9701, 712 )
+
+[node name="Vastane_Sinine10" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 10736, 513 )
+
+[node name="Vastane_Sinine11" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 12649, 633 )
+
+[node name="Vastane_Sinine12" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 14119, 589 )
+
+[node name="Vastane_Sinine13" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 14731, 692 )
+
+[node name="Vastane_Sinine14" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 16622, 603 )
+
+[node name="Vastane_Sinine15" parent="Vastane_Sinine" instance=ExtResource( 8 )]
+position = Vector2( 17655, 679 )
+
+[node name="Vastane_Lilla" type="Node2D" parent="."]
+
+[node name="Vastane_Lilla" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 787, 747 )
+
+[node name="Vastane_Lilla2" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 1282, 615 )
+
+[node name="Vastane_Lilla3" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 2300, 667 )
+
+[node name="Vastane_Lilla4" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 4223, 651 )
+
+[node name="Vastane_Lilla5" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 4784, 512 )
+
+[node name="Vastane_Lilla6" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 5666, 781 )
+
+[node name="Vastane_Lilla7" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 6315, 665 )
+
+[node name="Vastane_Lilla8" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 6704, 785 )
+
+[node name="Vastane_Lilla9" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 8836, 591 )
+
+[node name="Vastane_Lilla10" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 10301, 606 )
+
+[node name="Vastane_Lilla11" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 12312, 476 )
+
+[node name="Vastane_Lilla12" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 13900, 692 )
+
+[node name="Vastane_Lilla13" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 15636, 591 )
+
+[node name="Vastane_Lilla14" parent="Vastane_Lilla" instance=ExtResource( 10 )]
+position = Vector2( 18503, 591 )
