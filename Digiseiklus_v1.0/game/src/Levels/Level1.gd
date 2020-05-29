@@ -3,7 +3,6 @@ export (PackedScene) var player
 var isGreenVisible = false
 
 func _ready():
-	
 	TeleporterData.isLevel1 = true
 	AudioEffects.get_node("küsimuse_taust").stop()
 #	var screen_size = OS.get_screen_size(OS.get_current_screen())

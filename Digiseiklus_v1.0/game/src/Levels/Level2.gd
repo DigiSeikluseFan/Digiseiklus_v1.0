@@ -8,10 +8,10 @@ func _ready():
 	TeleporterData.isLevel1 = false
 	AudioEffects.get_node("Taseläbi").stop()
 	AudioEffects.get_node("küsimuse_taust").stop()
-#	var screen_size = OS.get_screen_size(OS.get_current_screen())
-#	var window_size = OS.get_window_size()
-#	var centered_pos = (screen_size - window_size) / 2
-#	OS.set_window_position(centered_pos)
+	var screen_size = OS.get_screen_size(OS.get_current_screen())
+	var window_size = OS.get_window_size()
+	var centered_pos = (screen_size - window_size) / 2
+	OS.set_window_position(centered_pos)
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	var audioPlayer = AudioStreamPlayer.new()
 	self.add_child(audioPlayer)

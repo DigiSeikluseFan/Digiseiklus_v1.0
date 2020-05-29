@@ -1,30 +1,21 @@
 extends Control
 
-onready var soundON = get_node("SoundON2")
-onready var soundOFF = get_node("SoundOFF")
 func _ready():
 	var screen_size = OS.get_screen_size(OS.get_current_screen())
 	var window_size = OS.get_window_size()
 	var centered_pos = (screen_size - window_size) / 2
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	AudioEffects.get_node("küsimuse_taust").play()
-	
-
+	print(TeleporterData.soundIsON)
+	if TeleporterData.soundIsON:
+		print("button ON:", get_node("SoundBtn/SoundON").visible)
+		get_node("SoundBtn/SoundON").visible = true
+	else:
+		get_node("SoundBtn/SoundOFF").visible = true
+		print("button OFF:", get_node("SoundBtn/SoundOFF").visible)
+		
 func _on_Exit_pressed():
 	get_tree().quit()
-
-func _on_Sound_pressed():
-	if soundON.visible == true:
-		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), true) 
-		soundON.visible = false
-		soundOFF.visible = true
-		print("sound off")
-	else:
-		AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), false)
-		soundON.visible = true
-		soundON.texture_normal
-		soundOFF.visible = false
-		print("sound on")
 
 func _on_Tiim_pressed():
 	get_tree().change_scene("res://src/Tiimist.tscn")

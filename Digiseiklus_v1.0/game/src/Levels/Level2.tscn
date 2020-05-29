@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://objektid/ram.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Levels/Level2.gd" type="Script" id=2]
@@ -10,12 +10,14 @@
 [ext_resource path="res://Vastane_Sinine.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Vastane_Lilla.tscn" type="PackedScene" id=10]
+[ext_resource path="res://objektid/mummud.tscn" type="PackedScene" id=11]
 [ext_resource path="res://objektid/Checkpoint_green1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://objektid/Checkpoint_green2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://objektid/Checkpoint_green3.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/helid/taust3.wav" type="AudioStream" id=15]
 [ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=16]
 [ext_resource path="res://objektid/Vaike_vent.tscn" type="PackedScene" id=17]
+[ext_resource path="res://objektid/mummud_aeglasem.tscn" type="PackedScene" id=18]
 [ext_resource path="res://objektid/animVent.tscn" type="PackedScene" id=20]
 [ext_resource path="res://objektid/Checkpoint_green4.tscn" type="PackedScene" id=21]
 [ext_resource path="res://objektid/FloppyDisc.tscn" type="PackedScene" id=31]
@@ -32,21 +34,6 @@ extents = Vector2( 7898.89, 6.36108 )
 resource_name = "fade_out"
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
-}
-
-[sub_resource type="Animation" id=3]
-resource_name = "fadein"
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -148,6 +135,377 @@ texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="mummudTaustal" type="Node2D" parent="."]
+
+[node name="mummud" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 39.0429, 107.246 )
+
+[node name="mummud2" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 39.433, 138.059 )
+
+[node name="mummud3" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 174.775, 271.061 )
+
+[node name="mummud7" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 1784.44, 183.821 )
+
+[node name="mummud8" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 1959.79, 108.084 )
+
+[node name="mummud9" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 1788.56, 436.549 )
+
+[node name="mummud10" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 2240.51, 90.7968 )
+
+[node name="mummud11" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 2096.44, 272.729 )
+
+[node name="mummud12" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 1618.13, 373.326 )
+
+[node name="mummud13" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 2557.55, 744.146 )
+
+[node name="mummud14" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 3501.08, 528.648 )
+
+[node name="mummud15" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 3871.37, 757.24 )
+
+[node name="mummud16" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 4015.76, 274.492 )
+
+[node name="mummud17" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 4082.19, 945.91 )
+
+[node name="mummud18" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 4027.27, 1047.77 )
+
+[node name="mummud19" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 3502.44, 479.31 )
+
+[node name="mummud20" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 3548.63, 377.542 )
+
+[node name="mummud21" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 5797.05, 137.197 )
+
+[node name="mummud22" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 5727.07, 377.242 )
+
+[node name="mummud23" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 5624.32, 440.132 )
+
+[node name="mummud24" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 6078.73, 83.1647 )
+
+[node name="mummud25" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 5452.86, 549.596 )
+
+[node name="mummud26" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7343.05, 486.006 )
+
+[node name="mummud27" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7369.94, 548.773 )
+
+[node name="mummud28" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7710.74, 756.888 )
+
+[node name="mummud29" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7717.41, 108.852 )
+
+[node name="mummud30" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7716.52, 139.854 )
+
+[node name="mummud31" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7914.94, 941.481 )
+
+[node name="mummud32" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7855.59, 402.044 )
+
+[node name="mummud33" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 7340.56, 533.789 )
+
+[node name="mummud34" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 9260.41, 522.005 )
+
+[node name="mummud35" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 9472.13, 433.046 )
+
+[node name="mummud36" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 9573.11, 373.699 )
+
+[node name="mummud37" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 9538.56, 554.397 )
+
+[node name="mummud38" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 9639.54, 140.74 )
+
+[node name="mummud39" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11219.9, 377.877 )
+
+[node name="mummud40" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11342.8, 515.514 )
+
+[node name="mummud41" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11550.2, 761.409 )
+
+[node name="mummud42" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11694.5, 394.958 )
+
+[node name="mummud43" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11559.9, 137.197 )
+
+[node name="mummud44" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11559, 101.766 )
+
+[node name="mummud45" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 11833.4, 89.2733 )
+
+[node name="mummud46" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 13101.1, 480.5 )
+
+[node name="mummud47" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 13379.1, 548.058 )
+
+[node name="mummud48" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 13478.5, 131.882 )
+
+[node name="mummud49" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 13758.4, 87.5936 )
+
+[node name="mummud50" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15057.2, 377.522 )
+
+[node name="mummud51" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15223.5, 182.372 )
+
+[node name="mummud52" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15398.9, 107.081 )
+
+[node name="mummud53" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15547.7, 1052.2 )
+
+[node name="mummud55" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15022.4, 480.376 )
+
+[node name="mummud56" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15016.9, 527.749 )
+
+[node name="mummud57" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 17251.9, 759.011 )
+
+[node name="mummud58" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 17455.6, 267.406 )
+
+[node name="mummud59" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 17593.6, 81.3011 )
+
+[node name="mummud60" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 17219.8, 551.738 )
+
+[node name="mummud61" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 17474.2, 879.006 )
+
+[node name="mummud54" parent="mummudTaustal" instance=ExtResource( 11 )]
+position = Vector2( 15399.7, 138.083 )
+
+[node name="mummud_aeglasem" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 319.41, 87.2614 )
+
+[node name="mummud_aeglasem2" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 176.169, 392.676 )
+
+[node name="mummud_aeglasem5" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 1958.44, 131.715 )
+
+[node name="mummud_aeglasem6" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 1890.94, 376.212 )
+
+[node name="mummud_aeglasem7" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 1737.82, 512.043 )
+
+[node name="mummud_aeglasem8" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 1612.39, 540.936 )
+
+[node name="mummud_aeglasem9" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 1579.39, 485.04 )
+
+[node name="mummud_aeglasem10" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 3877.83, 101.453 )
+
+[node name="mummud_aeglasem11" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 3878.9, 134.774 )
+
+[node name="mummud_aeglasem12" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 4032.14, 877.939 )
+
+[node name="mummud_aeglasem13" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 3657.83, 521.797 )
+
+[node name="mummud_aeglasem14" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 4014.62, 403.032 )
+
+[node name="mummud_aeglasem15" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 5577.82, 510.342 )
+
+[node name="mummud_aeglasem16" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 5799.26, 104.657 )
+
+[node name="mummud_aeglasem17" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 5933.02, 267.64 )
+
+[node name="mummud_aeglasem18" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 5700.62, 558.584 )
+
+[node name="mummud_aeglasem19" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 5420.86, 473.737 )
+
+[node name="mummud_aeglasem20" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 5460.01, 371.276 )
+
+[node name="mummud_aeglasem21" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 7383.05, 374.885 )
+
+[node name="mummud_aeglasem22" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 7542.47, 184.377 )
+
+[node name="mummud_aeglasem23" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 7854.26, 267.64 )
+
+[node name="mummud_aeglasem24" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 7997.76, 85.1702 )
+
+[node name="mummud_aeglasem25" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 7871.09, 878.825 )
+
+[node name="mummud_aeglasem26" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 7864.89, 1051.55 )
+
+[node name="mummud_aeglasem27" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9777.4, 402.883 )
+
+[node name="mummud_aeglasem28" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9292.43, 545.631 )
+
+[node name="mummud_aeglasem29" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9299.85, 373.933 )
+
+[node name="mummud_aeglasem30" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9461.95, 187.034 )
+
+[node name="mummud_aeglasem31" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9419.43, 515.657 )
+
+[node name="mummud_aeglasem32" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9578.87, 759.245 )
+
+[node name="mummud_aeglasem33" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9772.86, 261.439 )
+
+[node name="mummud_aeglasem34" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9638.22, 101.114 )
+
+[node name="mummud_aeglasem35" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9839.85, 944.369 )
+
+[node name="mummud_aeglasem36" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 9789.45, 1055.45 )
+
+[node name="mummud_aeglasem37" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 11693.2, 267.64 )
+
+[node name="mummud_aeglasem38" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 11383.2, 184.377 )
+
+[node name="mummud_aeglasem39" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 11704.7, 1055.98 )
+
+[node name="mummud_aeglasem40" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13145.6, 375.697 )
+
+[node name="mummud_aeglasem41" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13480.4, 758.946 )
+
+[node name="mummud_aeglasem42" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13621.3, 410.238 )
+
+[node name="mummud_aeglasem43" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13129.9, 550.202 )
+
+[node name="mummud_aeglasem44" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13302.7, 183.491 )
+
+[node name="mummud_aeglasem45" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13405.4, 378.362 )
+
+[node name="mummud_aeglasem46" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13302.7, 438.594 )
+
+[node name="mummud_aeglasem47" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13614.5, 266.754 )
+
+[node name="mummud_aeglasem48" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15054.7, 543.006 )
+
+[node name="mummud_aeglasem49" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 13677.6, 949.745 )
+
+[node name="mummud_aeglasem50" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15179.6, 530.655 )
+
+[node name="mummud_aeglasem51" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15535.7, 272.954 )
+
+[node name="mummud_aeglasem52" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15534.8, 402.278 )
+
+[node name="mummud_aeglasem53" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15324, 378.362 )
+
+[node name="mummud_aeglasem54" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15392.2, 756.588 )
+
+[node name="mummud_aeglasem55" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15595.1, 939.058 )
+
+[node name="mummud_aeglasem56" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 15679.2, 85.1701 )
+
+[node name="mummud_aeglasem57" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17457.4, 404.13 )
+
+[node name="mummud_aeglasem58" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17140.1, 435.507 )
+
+[node name="mummud_aeglasem59" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 16967.1, 544.888 )
+
+[node name="mummud_aeglasem60" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 16979.5, 373.933 )
+
+[node name="mummud_aeglasem61" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17141.6, 186.148 )
+
+[node name="mummud_aeglasem62" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17318.8, 133.002 )
+
+[node name="mummud_aeglasem63" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17318.8, 103.771 )
+
+[node name="mummud_aeglasem64" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17521.6, 949.838 )
+
+[node name="mummud_aeglasem65" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 17246.2, 375.85 )
+
+[node name="mummud_aeglasem66" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 19173, 384.965 )
+
+[node name="mummud_aeglasem67" parent="mummudTaustal" instance=ExtResource( 18 )]
+position = Vector2( 19175.4, 757.573 )
 
 [node name="Pind" type="Node2D" parent="."]
 position = Vector2( 3697, 688 )
@@ -406,7 +764,7 @@ __meta__ = {
 }
 
 [node name="Checkpoint_red2_1" parent="." instance=ExtResource( 34 )]
-position = Vector2( 3776, 707 )
+position = Vector2( 3776, 703.609 )
 
 [node name="Checkpoint_green1" parent="." instance=ExtResource( 12 )]
 visible = false
@@ -437,7 +795,7 @@ position = Vector2( 15298.5, 918.743 )
 position = Vector2( 19005.3, 798.115 )
 
 [node name="CP2_1" type="Position2D" parent="."]
-position = Vector2( 3921.51, 768.805 )
+position = Vector2( 3943.55, 799.327 )
 
 [node name="CP2_2" type="Position2D" parent="."]
 position = Vector2( 7768.89, 815.583 )
@@ -506,6 +864,7 @@ volume_db = -20.129
 autoplay = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 margin_right = 1941.0
 margin_bottom = 1089.0
 color = Color( 0, 0, 0, 1 )
@@ -524,18 +883,6 @@ position = Vector2( 63.0858, 681.276 )
 
 [node name="PauseScene" parent="CanvasLayer" instance=ExtResource( 3 )]
 visible = false
-
-[node name="ColorRect2" type="ColorRect" parent="."]
-margin_right = 1920.0
-margin_bottom = 1081.0
-color = Color( 0, 0, 0, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect2"]
-autoplay = "fadein"
-anims/fadein = SubResource( 3 )
 
 [node name="Vastane_Sinine" type="Node2D" parent="."]
 

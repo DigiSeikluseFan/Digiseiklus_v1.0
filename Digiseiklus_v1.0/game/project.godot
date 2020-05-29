@@ -48,6 +48,7 @@ CheckpointRed22="*res://objektid/Checkpoint_red2_2.tscn"
 CheckpointRed23="*res://objektid/Checkpoint_red2_3.tscn"
 CheckpointRed24="*res://objektid/Checkpoint_red2_4.tscn"
 CheckpointRed25="*res://objektid/Checkpoint_red2_5.tscn"
+SoundBtn="*res://src/SoundBtn.gd"
 
 [display]
 

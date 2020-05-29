@@ -11,6 +11,7 @@ var isRightAnswer = false
 var questionList
 var isLevel1 = false
 var isLevel2 = false
+var soundIsON = true
 
 
 var CP1_location = Vector2(3877.99,811.591)
@@ -43,6 +44,7 @@ func _ready():
 	TeleporterData.set("CP2_5_location", CP2_5_location)
 	TeleporterData.set("isLevel1", isLevel1)
 	TeleporterData.set("isLevel2", isLevel2)
+	TeleporterData.set("soundIsON", soundIsON)
 	
 	if isLevel1:
 		TeleporterData.set("player_location", player_location1)

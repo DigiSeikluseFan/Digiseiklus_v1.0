@@ -82,7 +82,7 @@ __meta__ = {
 position = Vector2( 226.477, 402.711 )
 scale = Vector2( 0.336215, 0.336215 )
 frames = SubResource( 1 )
-frame = 2
+frame = 4
 playing = true
 
 [node name="TextureRect" type="ColorRect" parent="."]
