@@ -9,14 +9,14 @@
 [node name="PauseScene" type="Control"]
 script = ExtResource( 5 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_horizontal_guides_": [ 504.0 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 1284.0, 610.0 ]
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 190.445
-margin_top = 167.889
-margin_right = 1717.44
-margin_bottom = 928.889
+margin_right = 1920.0
+margin_bottom = 1081.0
 color = Color( 0, 0, 0, 0.454902 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -24,10 +24,10 @@ __meta__ = {
 
 [node name="ExitToMain" type="TextureButton" parent="ColorRect"]
 pause_mode = 2
-margin_left = 327.885
-margin_top = 210.671
-margin_right = 509.885
-margin_bottom = 449.671
+margin_left = 519.0
+margin_top = 386.0
+margin_right = 701.0
+margin_bottom = 625.0
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 expand = true
@@ -38,10 +38,10 @@ __meta__ = {
 
 [node name="Continue" type="TextureButton" parent="ColorRect"]
 pause_mode = 2
-margin_left = 1026.99
-margin_top = 218.004
-margin_right = 1208.99
-margin_bottom = 457.004
+margin_left = 1219.0
+margin_top = 384.0
+margin_right = 1401.0
+margin_bottom = 623.0
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 1 )
 expand = true

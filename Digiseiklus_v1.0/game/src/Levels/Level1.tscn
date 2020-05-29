@@ -17,8 +17,8 @@
 [ext_resource path="res://PauseScene.tscn" type="PackedScene" id=15]
 [ext_resource path="res://objektid/CD.tscn" type="PackedScene" id=16]
 [ext_resource path="res://objektid/Vaike_vent.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Vastane_Punane.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Vastane_Roheline.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Vastane_Sinine.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Vastane_Lilla.tscn" type="PackedScene" id=19]
 [ext_resource path="res://objektid/animVent.tscn" type="PackedScene" id=20]
 [ext_resource path="res://objektid/Checkpoint_green4.tscn" type="PackedScene" id=21]
 [ext_resource path="res://objektid/Checkpoint_red4.tscn" type="PackedScene" id=22]
@@ -662,6 +662,12 @@ scale = Vector2( 0.418745, 0.420926 )
 [node name="Anim_Vent_Suur_1" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 196.539, 1203.63 )
 
+[node name="Anim_Vent_Suur_9" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+position = Vector2( -4203.75, 1200.64 )
+
+[node name="Anim_Vent_Suur_10" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
+position = Vector2( -4203.75, 673.23 )
+
 [node name="Anim_Vent_Suur_2" parent="Animated_Vent_Suur" instance=ExtResource( 20 )]
 position = Vector2( 3490.5, 682.388 )
 
@@ -779,140 +785,6 @@ scale = Vector2( 9.30544, 9.35391 )
 position = Vector2( 357267, 2600 )
 scale = Vector2( 9.30544, 9.35391 )
 
-[node name="Vastased_Punane" type="Node2D" parent="."]
-position = Vector2( 683, 651 )
-scale = Vector2( 0.045, 0.045 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Vastane_Punane1" parent="Vastased_Punane" instance=ExtResource( 18 )]
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane2" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 12167.3, -3136.85 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane3" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 33133.3, -4533.33 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane4" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 44222.2, -4222.22 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane5" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 78866.7, 933.333 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane6" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 89333.3, -755.556 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane7" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 99622.2, 2711.11 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane8" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 121856, 236.297 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane9" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 130783, -2132.94 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane10" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 140848, -1187.89 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane11" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 153014, 2938.41 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Punane12" parent="Vastased_Punane" instance=ExtResource( 18 )]
-position = Vector2( 161455, -362.046 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastased_Roheline" type="Node2D" parent="."]
-position = Vector2( 14681.4, 486 )
-scale = Vector2( 0.045, 0.045 )
-
-[node name="Vastane_Roheline1" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 5811.59, 271.465 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline2" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -4301.66, -3055.52 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline3" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -4284.91, 6650.44 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline4" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -24721.9, 6812 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline5" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -41348.1, 184.769 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline6" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -51811.8, -1941.15 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline_CP juures" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -61729.2, 1173.42 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline7" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -80870.8, 6555.58 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline8" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -92086.8, 2962.89 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline9" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -100796, 705.354 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline10" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -118103, 3380.48 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline11" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( -126801, -192.765 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline12" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 13111.1, 6622.22 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline13" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 25595.8, 4088.88 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline14" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 33779.3, 900.945 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline15" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 41158, 6675.89 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline16" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 57094.2, -1534.73 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline17" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 67703.6, -1579.18 )
-scale = Vector2( 1, 1 )
-
-[node name="Vastane_Roheline18" parent="Vastased_Roheline" instance=ExtResource( 19 )]
-position = Vector2( 75745.2, 6577.78 )
-scale = Vector2( 1, 1 )
-
 [node name="Fall_Checkpoint_1" type="Area2D" parent="."]
 position = Vector2( 9579, 1088 )
 scale = Vector2( 1.266, 1 )
@@ -979,7 +851,7 @@ position = Vector2( 14619.9, 810.552 )
 position = Vector2( 2421.56, 760.219 )
 
 [node name="CD2" parent="." instance=ExtResource( 16 )]
-position = Vector2( 4409.54, 638.607 )
+position = Vector2( 4410, 607 )
 
 [node name="CD3" parent="." instance=ExtResource( 16 )]
 position = Vector2( 5798.97, 696.589 )
@@ -1019,4 +891,95 @@ margin_left = 1.0
 margin_top = -1.0
 margin_right = 1.0
 margin_bottom = -1.0
+
+[node name="Vastane_Sinine" type="Node2D" parent="."]
+
+[node name="Vastane_Sinine" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 977, 513 )
+
+[node name="Vastane_Sinine2" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 2136, 450 )
+
+[node name="Vastane_Sinine3" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 4098, 694 )
+
+[node name="Vastane_Sinine4" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 5282, 780 )
+
+[node name="Vastane_Sinine5" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 6642, 550 )
+
+[node name="Vastane_Sinine6" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 8839, 473 )
+
+[node name="Vastane_Sinine7" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 10037, 514 )
+
+[node name="Vastane_Sinine8" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 10420, 614 )
+
+[node name="Vastane_Sinine9" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 12941, 489 )
+
+[node name="Vastane_Sinine10" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 13486, 780 )
+
+[node name="Vastane_Sinine11" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 15020, 495 )
+
+[node name="Vastane_Sinine12" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 15414, 774 )
+
+[node name="Vastane_Sinine13" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 16661, 782 )
+
+[node name="Vastane_Sinine14" parent="Vastane_Sinine" instance=ExtResource( 18 )]
+position = Vector2( 17149, 406 )
+
+[node name="Vastane_Lilla" type="Node2D" parent="."]
+
+[node name="Vastane_Lilla" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 685, 655 )
+
+[node name="Vastane_Lilla2" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 2550, 466 )
+
+[node name="Vastane_Lilla3" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 4781, 620 )
+
+[node name="Vastane_Lilla4" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 6045, 656 )
+
+[node name="Vastane_Lilla5" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 6991, 597 )
+
+[node name="Vastane_Lilla6" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 7820, 634 )
+
+[node name="Vastane_Lilla7" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 9250, 632 )
+
+[node name="Vastane_Lilla8" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 11790, 534 )
+
+[node name="Vastane_Lilla9" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 12345, 393 )
+
+[node name="Vastane_Lilla10" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 14451, 345 )
+
+[node name="Vastane_Lilla11" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 15759, 669 )
+
+[node name="Vastane_Lilla12" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 16290, 521 )
+
+[node name="Vastane_Lilla13" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 17848, 409 )
+
+[node name="Vastane_Lilla14" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 17363, 778 )
+
+[node name="Vastane_Lilla15" parent="Vastane_Lilla" instance=ExtResource( 19 )]
+position = Vector2( 18203, 776 )
 [connection signal="body_entered" from="Checkpoint_red1" to="Checkpoint_red1" method="_on_Checkpoint_red1_body_entered"]
