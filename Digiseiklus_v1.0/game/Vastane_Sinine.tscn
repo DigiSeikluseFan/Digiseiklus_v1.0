@@ -70,11 +70,6 @@ position = Vector2( -502.722, 16.1608 )
 collision_layer = 4
 script = ExtResource( 8 )
 
-[node name="Sprite" type="Sprite" parent="KillPlayer"]
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillPlayer"]
 position = Vector2( -16.4375, 133.16 )
 shape = SubResource( 4 )

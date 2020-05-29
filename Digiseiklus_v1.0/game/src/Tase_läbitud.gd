@@ -5,6 +5,7 @@ func _ready():
 	AudioEffects.get_node("Taseläbi").play()
 func _on_Edasi_pressed():
 	get_tree().change_scene("res://src/Vaheleht2.tscn")
-
+	print("Chippy location: ", TeleporterData.player_location1)
+	TeleporterData.isCheckpoint5 = false
 func _on_Katkesta_pressed():
 	get_tree().change_scene("res://src/UserInterface.tscn")

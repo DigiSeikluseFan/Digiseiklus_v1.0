@@ -11,3 +11,4 @@ func _physics_process(delta):
 		if body.name == "Player":
 			get_tree().change_scene(level_scene)
 			CheckpointRed21.isCheckpoint2_1 = false
+			print("Checkpoint_red2_2", TeleporterData.player_location2, "Chippy location 1 ", TeleporterData.player_location1)

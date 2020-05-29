@@ -52,7 +52,6 @@ position = Vector2( 0.453081, -12.0772 )
 rotation = 1.56629
 scale = Vector2( 0.223718, 0.233134 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="Area2D" type="Area2D" parent="KinematicBody2D/AnimatedSprite"]

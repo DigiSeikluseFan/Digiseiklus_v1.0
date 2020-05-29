@@ -2,7 +2,7 @@ extends Node2D
 
 #spawns player location to scene
 var player_location1 = Vector2(236.82,789.579)
-var player_location2 = Vector2(116.066, 702.246)
+var player_location2 = Vector2(63.086, 681.276)
 var player_spawn = load("res://src/Actors/Player.tscn")
 var isCheckpoint5 = false
 var checkpoint = null

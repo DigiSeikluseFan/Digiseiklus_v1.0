@@ -654,7 +654,7 @@ autoplay = "fade_out"
 anims/fade_out = SubResource( 2 )
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 34.4212, 665.511 )
+position = Vector2( 63.0858, 681.276 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

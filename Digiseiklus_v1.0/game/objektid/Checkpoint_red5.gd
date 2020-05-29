@@ -10,3 +10,4 @@ func _physics_process(delta):
 		if body.name == "Player":
 			get_tree().change_scene(level_scene)
 			CheckpointRed4.isCheckpoint4 = false
+			
