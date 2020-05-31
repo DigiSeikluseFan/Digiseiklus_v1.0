@@ -9,3 +9,10 @@ func _on_Edasi_pressed():
 	TeleporterData.isCheckpoint5 = false
 func _on_Katkesta_pressed():
 	get_tree().change_scene("res://src/UserInterface.tscn")
+
+func _on_Algusest_pressed():
+	get_tree().change_scene("res://src/UserInterface.tscn")
+
+
+func _on_exit_game_pressed():
+	get_tree().quit()

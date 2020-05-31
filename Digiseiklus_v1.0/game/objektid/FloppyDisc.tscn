@@ -41,7 +41,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 91.8822, 384.208 )
+extents = Vector2( 91.8822, 398.489 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 109.669, 485.071 )
@@ -57,7 +57,7 @@ b = Vector2( -18.7989, 6.63097 )
 [node name="Sprite" type="AnimatedSprite" parent="StaticBody2D"]
 position = Vector2( 6, 0 )
 frames = SubResource( 1 )
-frame = 19
+frame = 15
 speed_scale = 2.0
 playing = true
 __meta__ = {
@@ -68,7 +68,7 @@ __meta__ = {
 script = ExtResource( 31 )
 
 [node name="CollisionShape2D vaska2" type="CollisionShape2D" parent="StaticBody2D/Sprite/Area2D"]
-position = Vector2( -0.856452, -447.05 )
+position = Vector2( 3.92907, -569.08 )
 rotation = -1.5708
 scale = Vector2( 0.984, 0.725 )
 shape = SubResource( 2 )

@@ -6,6 +6,8 @@
 [ext_resource path="res://assets/Background/küsimuste_popup_puhas.png" type="Texture" id=4]
 [ext_resource path="res://assets/taustamuusika2.wav" type="AudioStream" id=5]
 
+
+
 [sub_resource type="ButtonGroup" id=1]
 
 [node name="Question" type="Control"]

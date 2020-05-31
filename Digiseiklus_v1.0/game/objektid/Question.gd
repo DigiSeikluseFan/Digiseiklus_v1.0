@@ -63,13 +63,16 @@ func _ready():
 	
 	var answersL = []
 	for ans in randomList.values():
+#		print(ans)
 		if ans == randomList.get("answer1") or ans == randomList.get("answer2"): 
 			answersL.insert(0, ans)
 		else: 
 			if ans == randomList.get("answer_right"):
-				rightAnswer = ans
-				answersL.insert(0, ans)
-					
+					rightAnswer = ans
+					answersL.insert(0, ans)
+	
+	answersL.shuffle()
+	
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus1").set_text(answersL[0]) 
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").set_text(answersL[1])    
 	get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").set_text(answersL[2])
@@ -105,7 +108,7 @@ func _on_Vastus3_pressed():
 
 func _on_VASTA_pressed():
 	if counter >= 1 and !TeleporterData.isCheckpoint5:
-		get_tree().change_scene("res://objektid/Question_AnswerRight.tscn")
+		get_tree().change_scene("res://src/Question_AnswerRight.tscn")
 	elif counter >=1 and TeleporterData.isCheckpoint5 and TeleporterData.isLevel1:
 		get_tree().change_scene("res://src/Tase_läbitud.tscn")
 		

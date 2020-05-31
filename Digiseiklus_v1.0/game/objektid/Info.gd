@@ -5,14 +5,14 @@ func _ready():
 	var window_size = OS.get_window_size()
 	var centered_pos = (screen_size - window_size) / 2
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	AudioEffects.get_node("Taseläbi").stop()
 	AudioEffects.get_node("küsimuse_taust").play()
 	print(TeleporterData.soundIsON)
 	if TeleporterData.soundIsON:
-		print("button ON:", get_node("SoundBtn/SoundON").visible)
 		get_node("SoundBtn/SoundON").visible = true
 	else:
 		get_node("SoundBtn/SoundOFF").visible = true
-		print("button OFF:", get_node("SoundBtn/SoundOFF").visible)
+		
 		
 func _on_Exit_pressed():
 	get_tree().quit()

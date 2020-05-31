@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/Background/Esileht/Nupp_algusesse_all.png" type="Texture" id=1]
+[ext_resource path="res://assets/Background/Esileht/Nupp_väljun.png" type="Texture" id=2]
+[ext_resource path="res://assets/Background/Esileht/Nupp_väljun_all.png" type="Texture" id=3]
+[ext_resource path="res://src/Tase_läbitud.gd" type="Script" id=4]
+[ext_resource path="res://assets/Background/Esileht/Nupp_algusesse.png" type="Texture" id=5]
+[ext_resource path="res://assets/Background/Esileht/Finish_küsimus_nuppudeta_var2.png" type="Texture" id=6]
+
+[node name="Mäng_läbitud" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="taust_FINAL (1)" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.31183
+margin_top = 2.34064
+margin_right = -2.31201
+margin_bottom = 2.34058
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Algusest" type="TextureButton" parent="."]
+margin_left = 1044.53
+margin_top = 751.445
+margin_right = 1302.53
+margin_bottom = 1009.45
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 1 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="exit_game" type="TextureButton" parent="."]
+margin_left = 665.867
+margin_top = 773.848
+margin_right = 811.866
+margin_bottom = 981.848
+texture_normal = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Algusest" to="." method="_on_Algusest_pressed"]
+[connection signal="pressed" from="exit_game" to="." method="_on_exit_game_pressed"]
