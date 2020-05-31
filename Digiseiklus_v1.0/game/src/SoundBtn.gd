@@ -1,6 +1,5 @@
 extends Control
 
-
 func _on_SoundON_button_up():
 	AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), true) 
 	print("sound off")

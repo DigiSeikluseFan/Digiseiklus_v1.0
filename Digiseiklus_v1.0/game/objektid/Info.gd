@@ -6,13 +6,15 @@ func _ready():
 	var centered_pos = (screen_size - window_size) / 2
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	AudioEffects.get_node("Taseläbi").stop()
-	AudioEffects.get_node("küsimuse_taust").play()
-	print(TeleporterData.soundIsON)
-	if TeleporterData.soundIsON:
-		get_node("SoundBtn/SoundON").visible = true
-	else:
-		get_node("SoundBtn/SoundOFF").visible = true
-		
+	
+	#AudioEffects.get_node("küsimuse_taust").play()
+	
+#	print(TeleporterData.soundIsON)
+#	if TeleporterData.soundIsON:
+#		get_node("SoundBtn/SoundON").visible = true
+#	else:
+#		get_node("SoundBtn/SoundOFF").visible = true
+#
 		
 func _on_Exit_pressed():
 	get_tree().quit()
@@ -20,7 +22,9 @@ func _on_Exit_pressed():
 func _on_Tiim_pressed():
 	get_tree().change_scene("res://src/Tiimist.tscn")
 	
+	
 func _on_Juhend_pressed():
+	
 	get_tree().change_scene("res://src/Juhend.tscn")
 	
 func _on_Alusta_pressed():

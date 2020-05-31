@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://objektid/Info.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/Background/Esileht/Nupp_2.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/Background/Esileht/Nupp_kinni_hover.png" type="Texture" id=7]
 [ext_resource path="res://assets/Background/Esileht/Nupp_kinni_lilla.png" type="Texture" id=8]
 [ext_resource path="res://assets/Background/Esileht/Nupp_1b.png" type="Texture" id=9]
+[ext_resource path="res://assets/helid/taustamuusika2.wav" type="AudioStream" id=10]
 [ext_resource path="res://assets/Background/Esileht/Nupp_2b.png" type="Texture" id=12]
 [ext_resource path="res://assets/Background/Esileht/Nupp_3b.png" type="Texture" id=14]
 
@@ -114,6 +115,10 @@ margin_left = 1711.39
 margin_top = 63.8593
 margin_right = 1711.39
 margin_bottom = 63.8593
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
 [connection signal="tree_exited" from="." to="." method="_on_UserInterface_tree_exited"]
 [connection signal="pressed" from="Juhend" to="." method="_on_Juhend_pressed"]
 [connection signal="pressed" from="Alusta" to="." method="_on_Alusta_pressed"]
