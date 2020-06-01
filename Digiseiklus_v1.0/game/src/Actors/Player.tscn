@@ -32,7 +32,7 @@ animations = [ {
 } ]
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 141.302, 198.742 )
+position = Vector2( 145.502, 192.994 )
 collision_mask = 6
 script = ExtResource( 12 )
 __meta__ = {
@@ -46,7 +46,7 @@ frames = SubResource( 1 )
 animation = "idle"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -30.9614, -9.28125, -26.9345, -11.6974, 32.4616, -13.9121, 34.6763, 41.6584, 29.8441, 45.2826, 17.3609, 45.8867, 21.9917, 54.5444, 18.9716, 72.0612, -16.4647, 72.0612, -13.4446, 47.296, -29.1493, 46.8934, -25.3238, 43.0678 )
+polygon = PoolVector2Array( -30.3805, -14.1921, -26.4013, -17.287, 32.402, -17.7292, 29.5282, 12.3357, 21.5699, 28.9156, 16.4853, 39.7478, 21.9917, 54.5444, 18.9716, 72.0612, -16.4647, 72.0612, -11.5899, 40.8531, -15.5691, 20.5151, -20.4325, 2.82988 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 3.80567, 2.31345 )
