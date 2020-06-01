@@ -96,7 +96,6 @@ func _on_Vastus2_pressed():
 		if counter >= 1:
 			counter = 0
 	
-
 func _on_Vastus3_pressed():
 	if rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").text:
 		counter += 1
@@ -110,8 +109,8 @@ func _on_VASTA_pressed():
 	if counter >= 1 and !TeleporterData.isCheckpoint5:
 		get_tree().change_scene("res://src/Question_AnswerRight.tscn")
 	elif counter >=1 and TeleporterData.isCheckpoint5 and TeleporterData.isLevel1:
-		get_tree().change_scene("res://src/Tase_läbitud.tscn")
-		
+		get_tree().change_scene("res://src/Tase_läbitud.tscn")	
 	else:
-		get_tree().change_scene("res://objektid/Question_AnswerWrong.tscn")	
+		get_tree().change_scene("res://src/Question_AnswerWrong.tscn")	
+		
 
