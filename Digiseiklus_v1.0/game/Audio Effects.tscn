@@ -9,7 +9,7 @@
 
 [node name="Audio Effects" type="Node"]
 
-[node name="küsimuse_taust" type="AudioStreamPlayer" parent="."]
+[node name="küsimuse_taust" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 2 )
 pitch_scale = 1.03
 

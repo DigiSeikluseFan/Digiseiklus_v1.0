@@ -7,14 +7,13 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	AudioEffects.get_node("Taseläbi").stop()
 	
-	AudioEffects.get_node("küsimuse_taust").play()
+	#AudioEffects.get_node("küsimuse_taust").play()
 	
 func _on_Exit_pressed():
 	get_tree().quit()
 
 func _on_Tiim_pressed():
 	get_tree().change_scene("res://src/Tiimist.tscn")
-	
 	
 func _on_Juhend_pressed():
 	get_tree().change_scene("res://src/Juhend.tscn")

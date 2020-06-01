@@ -1,11 +1,11 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://objektid/Info.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Background/Esileht/Nupp_3.png" type="Texture" id=1]
 [ext_resource path="res://assets/Background/Esileht/Nupp_2.png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/Esileht/Esileht_nuppudeta.png" type="Texture" id=3]
 [ext_resource path="res://assets/Background/Esileht/Nupp_1.png" type="Texture" id=4]
 [ext_resource path="res://src/SoundBtn.tscn" type="PackedScene" id=5]
-[ext_resource path="res://objektid/Info.gd" type="Script" id=6]
+[ext_resource path="res://src/Info.gd" type="Script" id=6]
 [ext_resource path="res://assets/Background/Esileht/Nupp_kinni_hover.png" type="Texture" id=7]
 [ext_resource path="res://assets/Background/Esileht/Nupp_kinni_lilla.png" type="Texture" id=8]
 [ext_resource path="res://assets/Background/Esileht/Nupp_1b.png" type="Texture" id=9]
@@ -18,24 +18,22 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -958.178
-margin_top = -540.0
-margin_right = 961.822
-margin_bottom = 540.0
+margin_left = -1015.0
+margin_top = -544.0
+margin_right = 907.0
+margin_bottom = 541.0
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="taust_FINAL (1)" type="TextureRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -960.0
-margin_top = -540.0
-margin_right = 960.0
-margin_bottom = 540.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 18.0662
+margin_top = -26.0
+margin_right = 90.0662
+margin_bottom = 23.0
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 2
@@ -60,6 +58,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Tiim" type="TextureButton" parent="."]
+margin_left = 1009.66
+margin_top = 498.261
+margin_right = 1287.66
+margin_bottom = 792.261
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 2
+size_flags_stretch_ratio = 0.0
+texture_normal = ExtResource( 1 )
+texture_hover = ExtResource( 14 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
 [node name="Alusta" type="TextureButton" parent="."]
 margin_left = 795.792
 margin_top = 547.652
@@ -76,20 +91,6 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
-
-[node name="Tiim" parent="." instance=ExtResource( 1 )]
-margin_left = 1037.73
-margin_top = 497.92
-margin_right = 1289.73
-margin_bottom = 796.92
-mouse_default_cursor_shape = 2
-size_flags_horizontal = 2
-size_flags_vertical = 1
-size_flags_stretch_ratio = 0.0
-texture_hover = ExtResource( 14 )
-expand = true
-stretch_mode = 3
-script = null
 
 [node name="Exit" type="TextureButton" parent="."]
 margin_left = 1789.15
@@ -121,6 +122,6 @@ stream = ExtResource( 10 )
 autoplay = true
 [connection signal="tree_exited" from="." to="." method="_on_UserInterface_tree_exited"]
 [connection signal="pressed" from="Juhend" to="." method="_on_Juhend_pressed"]
-[connection signal="pressed" from="Alusta" to="." method="_on_Alusta_pressed"]
 [connection signal="pressed" from="Tiim" to="." method="_on_Tiim_pressed"]
+[connection signal="pressed" from="Alusta" to="." method="_on_Alusta_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
