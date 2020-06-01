@@ -14,7 +14,10 @@ func _ready():
 	pass 
 
 func _physics_process(delta):
-	velocity.x = SPEED * direction
+	if TeleporterData.isLevel2:
+		velocity.x = (SPEED * direction) * 2
+	else: 
+		velocity.x = SPEED * direction
 	
 	if direction == 1:
 		$AnimatedSprite.flip_h = false

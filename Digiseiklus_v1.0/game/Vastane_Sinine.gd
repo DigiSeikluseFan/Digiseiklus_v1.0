@@ -9,12 +9,15 @@ var velocity = Vector2()
 var direction = 1
 
 onready var stomp_area: Area2D = $StompArea2D
-
-func _ready():
-	pass 
-
+		
 func _physics_process(delta):
-	velocity.x = SPEED * direction
+	
+	if TeleporterData.isLevel2:
+		velocity.x = (SPEED * direction) * 2
+		print(TeleporterData.isLevel2, "kiirus: ", velocity.x)
+	else: 
+		velocity.x = SPEED * direction
+		print(TeleporterData.isLevel2, "kiirus: ", velocity.x)
 	
 	if direction == 1:
 		$AnimatedSprite.flip_h = false
