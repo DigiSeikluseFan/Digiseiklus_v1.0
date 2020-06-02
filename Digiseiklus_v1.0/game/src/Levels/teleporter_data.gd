@@ -255,7 +255,6 @@ var questionList10 = {
 		"answer1": "Parool",
 		"answer2": "Läbi e-maili",
 		"answer_right": "ID-kaart"
-
 	},
 	3:{
 		"label": "Miks on rakendustes “jäta-mind-meelde” võimaluse kasutamine mittesoovitatav?",
