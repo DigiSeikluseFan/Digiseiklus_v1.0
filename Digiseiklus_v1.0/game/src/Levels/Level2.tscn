@@ -864,7 +864,6 @@ volume_db = -20.129
 autoplay = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 margin_right = 1941.0
 margin_bottom = 1089.0
 color = Color( 0, 0, 0, 1 )

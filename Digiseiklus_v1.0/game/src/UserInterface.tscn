@@ -32,10 +32,10 @@ anchor_left = 0.5
 anchor_top = 0.501633
 anchor_right = 0.5
 anchor_bottom = 0.501633
-margin_left = -908.0
+margin_left = -911.0
 margin_top = -539.272
-margin_right = 1034.0
-margin_bottom = 567.728
+margin_right = 1020.0
+margin_bottom = 570.728
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 2
@@ -44,10 +44,10 @@ __meta__ = {
 }
 
 [node name="Juhend" type="TextureButton" parent="."]
-margin_left = 541.788
-margin_top = 497.855
-margin_right = 819.788
-margin_bottom = 791.855
+margin_left = 621.971
+margin_top = 506.811
+margin_right = 899.971
+margin_bottom = 800.811
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 2
 size_flags_stretch_ratio = 0.0
@@ -56,15 +56,14 @@ texture_hover = ExtResource( 9 )
 expand = true
 stretch_mode = 3
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Tiim" type="TextureButton" parent="."]
-margin_left = 1009.66
-margin_top = 498.261
-margin_right = 1287.66
-margin_bottom = 792.261
+margin_left = 1110.3
+margin_top = 508.022
+margin_right = 1388.3
+margin_bottom = 802.022
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 2
 size_flags_stretch_ratio = 0.0
@@ -73,15 +72,14 @@ texture_hover = ExtResource( 14 )
 expand = true
 stretch_mode = 3
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Alusta" type="TextureButton" parent="."]
-margin_left = 795.792
-margin_top = 547.652
-margin_right = 1047.79
-margin_bottom = 828.652
+margin_left = 885.933
+margin_top = 564.14
+margin_right = 1137.93
+margin_bottom = 845.14
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 2
 size_flags_stretch_ratio = 0.0
@@ -90,15 +88,14 @@ texture_hover = ExtResource( 12 )
 expand = true
 stretch_mode = 3
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Exit" type="TextureButton" parent="."]
-margin_left = 1789.15
-margin_top = 67.6833
-margin_right = 1863.15
-margin_bottom = 181.683
+margin_left = 1889.32
+margin_top = 26.7673
+margin_right = 1963.32
+margin_bottom = 140.767
 hint_tooltip = "Välju"
 mouse_default_cursor_shape = 2
 size_flags_horizontal = 4
@@ -114,10 +111,10 @@ __meta__ = {
 }
 
 [node name="SoundBtn" parent="." instance=ExtResource( 5 )]
-margin_left = 1711.39
-margin_top = 63.8593
-margin_right = 1711.39
-margin_bottom = 63.8593
+margin_left = 1815.8
+margin_top = 24.3542
+margin_right = 1815.8
+margin_bottom = 24.3542
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
