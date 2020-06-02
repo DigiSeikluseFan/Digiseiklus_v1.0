@@ -35,10 +35,10 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 466.667, 733.222 )
+extents = Vector2( 466.667, 718.028 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 472.191, 66.6667 )
+extents = Vector2( 358.068, 66.6667 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 10, 708.865 )
@@ -76,12 +76,12 @@ position = Vector2( -502.722, 16.1608 )
 collision_layer = 4
 script = ExtResource( 8 )
 
+[node name="Sprite" type="Sprite" parent="KillPlayer"]
+position = Vector2( -58.3945, 135.375 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillPlayer"]
-position = Vector2( -16.4375, 133.16 )
+position = Vector2( -60.882, 133.16 )
 shape = SubResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="KillPlayer2" type="Area2D" parent="."]
 position = Vector2( 483.326, 151.536 )
@@ -91,7 +91,5 @@ script = ExtResource( 8 )
 [node name="Sprite" type="Sprite" parent="KillPlayer2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillPlayer2"]
+position = Vector2( 66.6666, 0 )
 shape = SubResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
