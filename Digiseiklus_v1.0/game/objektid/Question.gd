@@ -16,6 +16,7 @@ onready var button_right = get_node("VASTA")
 var rightAnswer 
 
 func _ready():
+	TeleporterData.isQuestionBox
 	AudioEffects.get_node("küsimuse_taust").play()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	

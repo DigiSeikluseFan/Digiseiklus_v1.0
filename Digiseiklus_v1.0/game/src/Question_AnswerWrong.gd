@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	
+	TeleporterData.isQuestionBox
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	if TeleporterData.isLevel1:
 		if CheckpointRed1.isCheckpoint1:

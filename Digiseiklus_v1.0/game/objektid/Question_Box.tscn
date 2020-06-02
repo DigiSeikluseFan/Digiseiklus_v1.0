@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://objektid/Question.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/küsimuste_popup_puhas.png" type="Texture" id=2]
 [ext_resource path="res://assets/Background/taust_FINAL (1).png" type="Texture" id=3]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfont.tres" type="DynamicFont" id=4]
+[ext_resource path="res://PauseScene.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/Xerox_Serif_dynamicfon_Title.tres" type="DynamicFont" id=6]
 
 [sub_resource type="ButtonGroup" id=1]
@@ -132,6 +133,11 @@ __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseScene" parent="CanvasLayer" instance=ExtResource( 5 )]
+visible = false
 [connection signal="pressed" from="VASTA" to="." method="_on_VASTA_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus1" to="." method="_on_Vastus1_pressed"]
 [connection signal="pressed" from="Vastuste_container/RadioBtn_conteiner/Vastus2" to="." method="_on_Vastus2_pressed"]
