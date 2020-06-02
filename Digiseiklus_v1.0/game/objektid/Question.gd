@@ -11,13 +11,14 @@ export (Array)  var answers
 var questionList = {}
 var randomList
 
-
 onready var button_right = get_node("VASTA")
 
 var rightAnswer 
+
 func _ready():
 	AudioEffects.get_node("küsimuse_taust").play()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
 	randomize()
 	if CheckpointRed1.isCheckpoint1:
 		print(CheckpointRed1.isCheckpoint1, "checkpoint 1 küsimused")
@@ -84,6 +85,7 @@ func _on_Vastus1_pressed():
 	if rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus1").text:
 		counter += 1
 		TeleporterData.isCheckpointPassed = true
+		print(counter)
 	else:
 		if counter >= 1:
 			counter = 0
@@ -92,6 +94,7 @@ func _on_Vastus2_pressed():
 	if  rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus2").text:
 		counter += 1
 		TeleporterData.isCheckpointPassed = true
+		print(counter)
 	else:
 		if counter >= 1:
 			counter = 0
@@ -99,6 +102,7 @@ func _on_Vastus2_pressed():
 func _on_Vastus3_pressed():
 	if rightAnswer == get_node("Vastuste_container/RadioBtn_conteiner/Vastus3").text:
 		counter += 1
+		print(counter)
 		TeleporterData.isCheckpointPassed = true
 	else:
 		if counter >= 1:
@@ -111,6 +115,7 @@ func _on_VASTA_pressed():
 	elif counter >=1 and TeleporterData.isCheckpoint5 and TeleporterData.isLevel1:
 		get_tree().change_scene("res://src/Tase_läbitud.tscn")	
 	else:
+		print("Vale vastus; ", counter)
 		get_tree().change_scene("res://src/Question_AnswerWrong.tscn")	
 		
 

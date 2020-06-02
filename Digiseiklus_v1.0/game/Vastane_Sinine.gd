@@ -14,10 +14,9 @@ func _physics_process(delta):
 	
 	if TeleporterData.isLevel2:
 		velocity.x = (SPEED * direction) * 2
-		print(TeleporterData.isLevel2, "kiirus: ", velocity.x)
 	else: 
 		velocity.x = SPEED * direction
-		print(TeleporterData.isLevel2, "kiirus: ", velocity.x)
+		
 	
 	if direction == 1:
 		$AnimatedSprite.flip_h = false

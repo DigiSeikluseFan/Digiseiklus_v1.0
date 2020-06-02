@@ -12,7 +12,7 @@ func _on_Katkesta_pressed():
 
 func _on_Algusest_pressed():
 	get_tree().change_scene("res://src/UserInterface.tscn")
-
+	TeleporterData.player_location1 = Vector2(236.82,789.579)
 
 func _on_exit_game_pressed():
 	get_tree().quit()
