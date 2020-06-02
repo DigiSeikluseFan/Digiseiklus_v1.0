@@ -33,37 +33,27 @@ func _ready():
 		yield(get_tree().create_timer(2.0), "timeout")
 		get_tree().change_scene("res://src/Levels/Level2.tscn")
 		TeleporterData.player_location2 = TeleporterData.CP2_1_location
-		print(TeleporterData.CP2_1_location)
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed22.isCheckpoint2_2:
 		yield(get_tree().create_timer(2.0), "timeout")
 		get_tree().change_scene("res://src/Levels/Level2.tscn")
 		TeleporterData.player_location2 = TeleporterData.CP2_2_location
-		print(TeleporterData.CP2_2_location)
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed23.isCheckpoint2_3:
 		yield(get_tree().create_timer(2.0), "timeout")
 		get_tree().change_scene("res://src/Levels/Level2.tscn")
 		TeleporterData.player_location2 = TeleporterData.CP2_3_location
-		print(TeleporterData.CP2_3_location)
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed24.isCheckpoint2_4:
 		yield(get_tree().create_timer(2.0), "timeout")
-		print("Checkpoint2_4 läbitud")
 		get_tree().change_scene("res://src/Levels/Level2.tscn")
 		TeleporterData.player_location2 = TeleporterData.CP2_4_location
-		print(TeleporterData.CP2_4_location)
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed25.isCheckpoint2_5:
 		yield(get_tree().create_timer(3.0), "timeout")
-		print("Checkpoint2_5 läbitud")
 		get_tree().change_scene("res://src/Mäng_läbitud.tscn")
-		print(TeleporterData.CP2_5_location)
 		TeleporterData.isCheckpointPassed = true
-		
-	
-	
-	
+			
 
 func _on_ExitGame_button_up():
 	get_tree().quit()

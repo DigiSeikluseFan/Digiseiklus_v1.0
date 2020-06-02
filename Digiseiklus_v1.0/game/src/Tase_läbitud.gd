@@ -5,10 +5,10 @@ func _ready():
 	AudioEffects.get_node("Taseläbi").play()
 func _on_Edasi_pressed():
 	get_tree().change_scene("res://src/Vaheleht2.tscn")
-	print("Chippy location: ", TeleporterData.player_location1)
 	TeleporterData.isCheckpoint5 = false
 func _on_Katkesta_pressed():
 	get_tree().change_scene("res://src/UserInterface.tscn")
+	TeleporterData.player_location1 = Vector2(236.82,789.579)
 
 func _on_Algusest_pressed():
 	get_tree().change_scene("res://src/UserInterface.tscn")

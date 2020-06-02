@@ -24,22 +24,18 @@ func _ready():
 	p.set_position(location)
 	
 	if location >= TeleporterData.CP2_1_location and location < TeleporterData.CP2_2_location and TeleporterData.isCheckpointPassed == true:
-		print("Chips L2_cp2_1",location)
 		get_node("Checkpoint_green1").visible = true
 		get_node("Checkpoint_red2_1").visible = false
 		get_node("Checkpoint_red2_1/CollisionShape2D").set_deferred("disabled", true)
 	if location >= TeleporterData.CP2_2_location and location < TeleporterData.CP2_3_location and TeleporterData.isCheckpointPassed == true:
-		print("Chippy L2_cp2_2: ", location)
 		get_node("Checkpoint_green2").visible = true
 		get_node("Checkpoint_red2_2").visible = false
 		get_node("Checkpoint_red2_2/CollisionShape2D").set_deferred("disabled", true)
 	if location >= TeleporterData.CP2_3_location and location < TeleporterData.CP2_4_location and TeleporterData.isCheckpointPassed == true:
-		print("Chippy L2_cp2_3: ", location)
 		get_node("Checkpoint_green3").visible = true
 		get_node("Checkpoint_red2_3").visible = false
 		get_node("Checkpoint_red2_3/CollisionShape2D").set_deferred("disabled", true)
 	if location >= TeleporterData.CP2_4_location and location < TeleporterData.CP2_5_location and TeleporterData.isCheckpointPassed == true:
-		print("Chippy L2_cp2_4: ", location)
 		get_node("Checkpoint_green4").visible = true
 		get_node("Checkpoint_red2_4").visible = false
 		get_node("Checkpoint_red2_4/CollisionShape2D").set_deferred("disabled", true)

@@ -30,11 +30,9 @@ func _ready():
 			yield(get_tree().create_timer(2.0), "timeout")
 			get_tree().change_scene("res://src/Levels/Level2.tscn")
 			TeleporterData.player_location2 =  Vector2(63.086, 681.276)
-			print("CP1", CheckpointRed21.isCheckpoint2_1,"Chippy locat2: ", TeleporterData.player_location2)
 		elif CheckpointRed22.isCheckpoint2_2:
 			yield(get_tree().create_timer(2.0), "timeout")
 			get_tree().change_scene("res://src/Levels/Level2.tscn")
-			TeleporterData.player_location2 = TeleporterData.CP2_1_location
 		elif CheckpointRed23.isCheckpoint2_3:
 			yield(get_tree().create_timer(2.0), "timeout")
 			get_tree().change_scene("res://src/Levels/Level2.tscn")

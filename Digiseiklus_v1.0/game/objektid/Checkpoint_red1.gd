@@ -8,4 +8,4 @@ var isCheckpoint1 = true
 func _on_Checkpoint_red1_body_entered(body):
 	if body.get_name() == "Player":
 		get_tree().change_scene("res://objektid/Question_Box.tscn")
-		print("Checkpoint_red1")
+		

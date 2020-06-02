@@ -22,7 +22,6 @@ func _ready():
 	
 	randomize()
 	if CheckpointRed1.isCheckpoint1:
-		print(CheckpointRed1.isCheckpoint1, "checkpoint 1 küsimused")
 		questionList = TeleporterData.questionList1
 		randomList = questionList[randi() % questionList.size()+1]	
 	elif TeleporterData.isCheckpointPassed and CheckpointRed2.isCheckpoint2:

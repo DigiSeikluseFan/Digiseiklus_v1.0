@@ -21,12 +21,9 @@ _global_script_class_icons={
 [application]
 
 config/name="Digiseiklus_v1.0"
-config/description="Digiseikluse mäng
-Lisad: Vastased(ohtlikud), küsimused, 2 taset, ohtlikud CD plaadid ja FloppyDiscid."
+config/description="Digiseiklus + küsimused + 2 vastast + animated cd/vent"
 run/main_scene="res://src/UserInterface.tscn"
-config/icon="res://assets/ikoon/icon.png"
-config/macos_native_icon="res://assets/ikoon/Ikoon.icns"
-config/windows_native_icon="res://assets/ikoon/icon.ico"
+config/icon="res://icon.png"
 
 [audio]
 
