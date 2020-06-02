@@ -87,7 +87,7 @@ size_flags_horizontal = 4
 custom_fonts/font = ExtResource( 2 )
 custom_constants/line_spacing = 0
 custom_constants/shadow_offset_y = 0
-text = "Kahju aga sinu vastus oli vale!. 
+text = "Kahju aga sinu vastus oli vale! 
 
 Proovi uuesti!
 
@@ -103,7 +103,7 @@ __meta__ = {
 position = Vector2( 1038.13, 560.44 )
 scale = Vector2( 0.1127, 0.1127 )
 frames = SubResource( 1 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="animationPlayer" type="AnimationPlayer" parent="."]

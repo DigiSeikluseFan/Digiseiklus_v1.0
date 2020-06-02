@@ -47,7 +47,7 @@ func _ready():
 		print(TeleporterData.CP2_3_location)
 		TeleporterData.isCheckpointPassed = true
 	elif CheckpointRed24.isCheckpoint2_4:
-		yield(get_tree().create_timer(0.1), "timeout")
+		yield(get_tree().create_timer(2.0), "timeout")
 		print("Checkpoint2_4 läbitud")
 		get_tree().change_scene("res://src/Levels/Level2.tscn")
 		TeleporterData.player_location2 = TeleporterData.CP2_4_location
