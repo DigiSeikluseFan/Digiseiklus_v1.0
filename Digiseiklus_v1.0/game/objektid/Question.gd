@@ -19,7 +19,16 @@ func _ready():
 	TeleporterData.isQuestionBox
 	AudioEffects.get_node("küsimuse_taust").play()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	
+	print("CP1", CheckpointRed1.isCheckpoint1)
+	print("CP2", CheckpointRed2.isCheckpoint2)
+	print("CP3", CheckpointRed3.isCheckpoint3)
+	print("CP4", CheckpointRed4.isCheckpoint4)
+	print("CP5", CheckpointRed5.isCheckpoint5)
+	print("CP2_1", CheckpointRed21.isCheckpoint2_1)
+	print("CP2_2", CheckpointRed22.isCheckpoint2_2)
+	print("CP2_3", CheckpointRed23.isCheckpoint2_3)
+	print("CP2_4", CheckpointRed24.isCheckpoint2_4)
+	print("CP2_5", CheckpointRed25.isCheckpoint2_5)
 	randomize()
 	if CheckpointRed1.isCheckpoint1:
 		questionList = TeleporterData.questionList1

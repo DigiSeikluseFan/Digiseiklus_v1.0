@@ -531,7 +531,7 @@ position = Vector2( 14468.2, 1417.48 )
 scale = Vector2( 4.918, 5.73 )
 
 [node name="Must_pind5" parent="Pind" instance=ExtResource( 6 )]
-position = Vector2( 27078.1, 1412.7 )
+position = Vector2( 26897.4, 1392.69 )
 scale = Vector2( 4.631, 5.73 )
 
 [node name="Must_pind7" parent="Pind" instance=ExtResource( 6 )]

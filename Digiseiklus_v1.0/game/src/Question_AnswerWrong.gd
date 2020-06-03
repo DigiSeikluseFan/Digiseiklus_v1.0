@@ -3,6 +3,7 @@ extends Control
 func _ready():
 	TeleporterData.isQuestionBox
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	yield(get_tree().create_timer(2.5), "timeout")
 	if TeleporterData.isLevel1:
 		if CheckpointRed1.isCheckpoint1:
 			yield(get_tree().create_timer(2.0), "timeout")

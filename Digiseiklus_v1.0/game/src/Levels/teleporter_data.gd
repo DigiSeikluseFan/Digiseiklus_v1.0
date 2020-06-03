@@ -1,5 +1,6 @@
 extends Node2D
-
+const level1 = preload("res://src/Levels/Level1.tscn")
+const level2 = preload("res://src/Levels/Level2.tscn")
 #spawns player location to scene
 var player_location1 = Vector2(236.82,789.579)
 var player_location2 = Vector2(63.086, 681.276)

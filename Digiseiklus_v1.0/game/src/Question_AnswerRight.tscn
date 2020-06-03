@@ -32,7 +32,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 840.593, 562.76 ), Vector2( 1056.09, 560.229 ) ]
+"values": [ Vector2( 847.124, 556.252 ), Vector2( 1058.94, 555.962 ) ]
 }
 
 [node name="Question_answerRight" type="Control"]
@@ -101,10 +101,10 @@ __meta__ = {
 }
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( 849.572, 562.655 )
+position = Vector2( 1058.94, 555.962 )
 scale = Vector2( 0.1127, 0.1127 )
 frames = SubResource( 1 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="animationPlayer" type="AnimationPlayer" parent="."]
